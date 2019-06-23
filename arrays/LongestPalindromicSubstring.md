@@ -59,7 +59,7 @@ public class Solution {
 This code lays the groundwork with the `extendPalindrome` methods, but it has a number of aspects we would like to revise:
 
 * `lo` and `maxLen` bring about state to the party. This state makes it harder to identify the flow. While class variables are not evil per-se, but `extendPalindrome` could definitely do without
-* The `if` block inside `extendPalindrome` could be made clearer
+* The `if` block inside `extendPalindrome` could be clearer
 
 
 
