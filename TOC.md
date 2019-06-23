@@ -1,7 +1,7 @@
 # Assorted LeetCode solutions
 
 ## Arrays
-* [Best Time to Buy and Sell Stock II](BestTimeToBuyAndSellStock2.md)
+* [Best Time to Buy and Sell Stock II](arrays/BestTimeToBuyAndSellStock2.md)
 * [Contains Duplicate](ContainsDuplicate.md)
 * [Intersection of Two Arrays II](IntersectionOfTwoArrays2.md)
 * [Valid Sudoku](ValidSudoku.md)
