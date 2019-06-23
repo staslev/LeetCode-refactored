@@ -1,3 +1,11 @@
+## Tell me more
+
+Good thing we have a [table of contents](TOC.md).
+
+And an [FAQ](FAQ.md).
+
+
+
 ## Does the world really need another LeetCode solution set?
 
 Probably not. Who knows what the world really needs these days.
@@ -84,10 +92,3 @@ See also Q2 in the [FAQ](FAQ.md) section.
 
 ## Dude, do you even know what TLDR  means?
 Damn.
-
-
-
-## Ok, Ok. Tell me more.
-Good thing we have a [table of contents](TOC.md).
-
-And an [FAQ](FAQ.md).
