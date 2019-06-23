@@ -2,9 +2,9 @@
 
 #### Q1: Why is your code indentation so ugly?
 
-You mean the markdown sections, right?  Because I format my actual code with a beautiful style that has never ever been disliked.
+From my experience this is caused by the infamous tabs vs. spaces issue. 
 
-The markdown sections on the other hand, are formatted using an offline markdown editor I use, and seems like GitHub makes things look much worse than then the way they do locally so… it works on my machine.
+Let me know where and I'll fix it.
 
 ___
 

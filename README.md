@@ -1,7 +1,3 @@
-# Assorted LeetCode solutions
-
-
-
 ## Does the world really need another LeetCode solution set?
 
 Probably not. Who knows what the world really needs these days.
@@ -24,6 +20,7 @@ In particular I strongly believe in:
 ## That's a lot of words. TLDR please?
 
 > **Move Zeros**
+>
 > Given an array `nums`, write a function to move all `0`'s to the end of it while maintaining the relative order of the non-zero elements.
 >
 > Solution signature is: `void moveZeroes(int[] nums)`

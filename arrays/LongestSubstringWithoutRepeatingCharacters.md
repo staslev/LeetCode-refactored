@@ -85,13 +85,13 @@ private int windowLength(int[] window) {
 }
 ```
 
-`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `atOrAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
+`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `uniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
 
 ```java
 private int stretchRight(int[] window, String str, Map<Character, Integer> seen) {
   int extendedEnd = window[END];
   while (extendedEnd < str.length() &&
-         !atOrAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
+    uniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
     seen.put(str.charAt(extendedEnd), extendedEnd);
     extendedEnd++;
   }
@@ -101,12 +101,11 @@ private int stretchRight(int[] window, String str, Map<Character, Integer> seen)
 ```
 
 ```java
-private boolean atOrAfterWindowStart(char aChar,
-                                     int windowStart,
-                                     Map<Character, Integer> seen) {
-  return seen.containsKey(aChar) && seen.get(aChar) >= windowStart;
+private boolean uniqueAfterWindowStart(char aChar,
+                                       int windowStart,
+                                       Map<Character, Integer> seen) {
+  return !seen.containsKey(aChar) || seen.get(aChar) < windowStart;
 }
-
 ```
 
 `adjustForDuplicate` is responsible for making window adjustments once a duplicate is known to be at index `window.end + 1`:

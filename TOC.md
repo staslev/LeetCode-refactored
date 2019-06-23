@@ -9,4 +9,5 @@
 * [3Sum](arrays/3Sum.md)
 * [Group Anagrams](arrays/GroupAnagrams.md)
 * [Longest Substring Without Repeating Characters](arrays/LongestSubstringWithoutRepeatingCharacters.md)
+* [Longest Palindromic Substring](LongestPalindromicSubstring.md)
 
