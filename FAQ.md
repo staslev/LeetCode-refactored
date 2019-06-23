@@ -24,7 +24,7 @@ That said, short (yet convoluted) solutions may be easier to *memorize*. I do be
 
 #### Q3: It's hard to come up with clear and concise solutions on the spot, how did you do that?
 
-I'm afraid I didn't.
+I most definitely did not.
 
 The solutions I present are the result of grinding the problem over and over again, experimenting with all kinds of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes unlock certain insights, which lead to more changes, which unlock further insights. See also [SB Changes by Kent Beck](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
 
