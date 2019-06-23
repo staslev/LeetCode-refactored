@@ -16,8 +16,8 @@ It never ceases to amaze me, how often, and to what extent, common solutions are
 Personally I happen to believe in software engineering practices, and wish more of them could be taken into account when educating, and interviewing, software engineers.  To that end, my goal with this project it to try to present a different angle on LeetCode solutions which incorporates some of my beliefs and perspectives, gathered over the past decade and a half of professionally practicing and researching (as in a P.hD.) software engineering. 
 
 In particular I strongly believe in:
- - A very low tolerance for unreadable code
- - Code that reflects an *intuitive* mental model of the solution
+ - A very *low tolerance for unreadable* code
+ - Code that reflects an *intuitive mental model* of the solution
 
 
 
