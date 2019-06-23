@@ -50,7 +50,7 @@ public void moveZeroes(int[] nums) {
 }
 ```
 
-It's clean indeed, but could use a little structure.  In fact, if we slightly refactor it, this solution will be able to tell us what actually needs to be done as part of the solution:
+It's clean indeed, but could use a little structure. In fact, if we slightly refactor it, it is able to tell the reader what's going on:
 
 ```java
 public void moveZeroes(int[] nums) {  
