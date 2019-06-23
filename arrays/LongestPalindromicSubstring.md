@@ -22,6 +22,8 @@ If you google this question, wikipedia has a linear solution which we will not c
 
 ### Code
 
+Here's the code from LeetCode:
+
 ```java
 public class Solution {
 
@@ -54,9 +56,9 @@ public class Solution {
 }
 ```
 
-This code lays the grounds with the `extendPalindrome` methods, but it has a number of properties we would like to revise:
+This code lays the groundwork with the `extendPalindrome` methods, but it has a number of aspects we would like to revise:
 
-* `lo` and `maxLen` are class variables. The state brought about by these fields makes it harder to identify the flow. While class variables are not evil per-se, when dealing with small sized code such as LeetCode solutions it's best to avoid state for the sake of clarity and simplicity. 
+* `lo` and `maxLen` bring about state to the party. This state makes it harder to identify the flow. While class variables are not evil per-se, but `extendPalindrome` could definitely do without
 * The `if` block inside `extendPalindrome` could be made clearer
 
 
