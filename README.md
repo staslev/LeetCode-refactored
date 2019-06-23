@@ -87,18 +87,14 @@ Mostly because when one reads the revised version of the `moveZeroes` method, th
 
 Looking at the original solution, this is hardly the case. Even though it's clean, the cognitive load is far from trivial given the loops and the conditional expression in one of them.
 
-Moreover, in some cases the refactored solutions may be somewhat longer than the original ones I copy paste from LeetCode. However, I believe that the refactored versions are at least as clearer as they are longer. Probably even more so.
-
-It's also worth noting that a solution being shorter, does not necessarily mean it is easier to produce during an interview. Perhaps somewhat surprisingly, I'd argue it is often the other way around. Longer, but significantly clearer solution could be easier to reproduce since they reflect a clear mental model of the solution. 
-
-Shorter solutions may be easier to memorize, but that may not be the best approach towards technical interviews.
-
-
+See also Q2 in the [FAQ](FAQ.md) section.
 
 ## Dude, do you even know what TLDR  means?
 Damn.
 
 
 
-## Ok, Ok. Show me more.
+## Ok, Ok. Tell me more.
 Good thing we have a [table of contents](TOC.md).
+
+And an [FAQ](FAQ.md).
