@@ -30,13 +30,13 @@ Here's a *O(n)* time and *O(n)* space complexity as copied from LeetCode's discu
 // linear time & complexity
 // Set + for-loop
 public boolean containsDuplicate(int[] nums) {
-	Set<Integer> set = new HashSet<>();
-	for(int i : nums) {
-		if(!set.add(i)) { // a duplicate will return false
-			return true; 
-		}
-	}
-	return false;
+  Set<Integer> set = new HashSet<>();
+  for(int i : nums) {
+    if(!set.add(i)) { // a duplicate will return false
+      return true;
+    }
+  }
+  return false;
 }
 ```
 
@@ -47,16 +47,16 @@ The sorting solution code looks like so, again, copied from LeetCode's discussio
 // Programming Interviews in Java: The Insider's Guide")
 // Arryas.sort() + loop
 public boolean containsDuplicate(int[] nums) {
-	if (nums.length ==0 || nums.length == 1){
-		return false;
-	}
-	Arrays.sort(nums);
-	for (int i=0;i<nums.length-1;i++){
-		if (nums[i] == nums[i+1]){
-			return true;
-		}
-	}
-	return false;
+  if (nums.length ==0 || nums.length == 1) {
+    return false;
+  }
+  Arrays.sort(nums);
+  for (int i=0;i<nums.length-1;i++) {
+    if (nums[i] == nums[i+1]) {
+      return true;
+    }
+  }
+  return false;
 }
 ```
 
@@ -72,13 +72,14 @@ Extracting the for-loop into a separate method and using Java streams for going 
 // solution version 2, restructured.
 // Array.sort() + streams
 private boolean seekSortedDuplicates(int[] nums) {  
-	return IntStream.range(0, nums.length - 1)
-		  .anyMatch(i -> nums[i] == nums[i + 1]); 
+  return 
+    IntStream.range(0, nums.length - 1)
+    .anyMatch(i -> nums[i] == nums[i + 1]); 
 }  
 
 public boolean containsDuplicate(int[] nums) {
-	Arrays.sort(nums); // check
-	return seekSortedDuplicates(nums); // mate
+  Arrays.sort(nums); // check
+  return seekSortedDuplicates(nums); // mate
 }
 ```
 A benefit of using Java streams here, is that the if-clause in the original code which was meant to perform basic validations, can now be relieved.

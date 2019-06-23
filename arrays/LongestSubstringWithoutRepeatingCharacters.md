@@ -80,7 +80,7 @@ private static final int END = 1;
 
 ```java
 private int windowLength(int[] window) {
-	// if a window is [i,j] its substring's length is 2
+  // if a window is [i,j] its substring's length is 2
   return (window[END] - window[START]) + 1;
 }
 ```

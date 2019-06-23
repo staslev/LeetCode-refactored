@@ -37,13 +37,13 @@ The solution on LeetCode is quite concise but I believe naming could be better. 
 
 ```java
 // soloution version 1, restructured.
-public int maxProfit(int[] prices) {  
-	int totalProfit = 0;  
-	for (int day = 1; day < prices.length; day++) {  
-		int dailyGain = Math.max(prices[day] - prices[day - 1],0);
-		totalProfit += dailyGain;
-	} 
-	return totalProfit;  
+public int maxProfit(int[] prices) {
+  int totalProfit = 0;  
+  for (int day = 1; day < prices.length; day++) {  
+    int dailyGain = Math.max(prices[day] - prices[day - 1],0);
+    totalProfit += dailyGain;
+  }
+  return totalProfit;  
 }
 ```
 

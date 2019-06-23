@@ -10,7 +10,7 @@
 We can go about solving this in a number of ways.
 
 1. We can sort both arrays and then have two runner indices start from the beginning for each sorted array, and stop once one of them has reached the end of the array it's going over. Each step, compare the elements pointed by both these indices:
-   
+  
    * If the elements pointed by these indices are equals, add them to the intersection array and advance both.
    * If one is greater than the other advance only the one pointing to the lesser element
    
@@ -33,31 +33,31 @@ The following solution is one of the most upvoted (Java) ones on LeetCode's disc
 ```java
 // solution 1 (seen online)
 public int[] intersect(int[] nums1, int[] nums2) {
+  
+  HashMap<Integer, Integer> map = new HashMap<>();
+  ArrayList<Integer> result = new ArrayList<Integer>();
 
-	HashMap<Integer, Integer> map = new HashMap<>();
-	ArrayList<Integer> result = new ArrayList<Integer>();
+  for (int i = 0; i < nums1.length; i++) {
+    if (map.containsKey(nums1[i])) {
+      map.put(nums1[i], map.get(nums1[i])+1);
+    } else {
+      map.put(nums1[i], 1);
+    }
+  }
 
-	for(int i = 0; i < nums1.length; i++){
-	    if(map.containsKey(nums1[i])){
-			map.put(nums1[i], map.get(nums1[i])+1);
-	    } else {
-			map.put(nums1[i], 1);
-	    }
-	}
+  for (int i = 0; i < nums2.length; i++) {
+    if(map.containsKey(nums2[i]) && map.get(nums2[i]) > 0) {
+      result.add(nums2[i]);
+      map.put(nums2[i], map.get(nums2[i])-1);
+    }
+  }
 
-	for(int i = 0; i < nums2.length; i++){
-	    if(map.containsKey(nums2[i]) && map.get(nums2[i]) > 0){
-	        result.add(nums2[i]);
-	        map.put(nums2[i], map.get(nums2[i])-1);
-	    }
-	}
+  int[] r = new int[result.size()];
+  for (int i = 0; i < result.size(); i++) {
+    r[i] = result.get(i);
+  }
 
-	int[] r = new int[result.size()];
-	for(int i = 0; i < result.size(); i++){
-	    r[i] = result.get(i);
-	}
-
-	return r;
+  return r;
 }
 ```
 
@@ -81,31 +81,31 @@ Applying these changes results in the following code:
 
 ```java
 private List<Integer> consumeMatching(
-	int[] nums2, Map<Integer, Integer> index) {
-	
-	List<Integer> matched = new ArrayList<>();  
-	for (int num : nums2) {  
-		if (index.containsKey(num) && index.get(num) > 0) {  
-			matched.add(num);  
-			index.put(num, index.get(num) - 1);  
-		}
-	}  
-	return matched;  
+  int[] nums2, Map<Integer, Integer> index) {
+  
+  List<Integer> matched = new ArrayList<>();  
+  for (int num : nums2) {
+    if (index.containsKey(num) && index.get(num) > 0) {  
+      matched.add(num);  
+      index.put(num, index.get(num) - 1);  
+      }
+  }  
+  return matched;  
 }  
   
 private Map<Integer, Integer> buildIndex(int[] nums1) {  
-	Map<Integer, Integer> numToCount = new HashMap<>();  
-	for (int num : nums1) {  
-		int count = numToCount.getOrDefault(num, 0) + 1;  
-		numToCount.put(num, count);  
-	}
-	return numToCount;  
+  Map<Integer, Integer> numToCount = new HashMap<>();  
+  for (int num : nums1) {  
+    int count = numToCount.getOrDefault(num, 0) + 1;  
+    numToCount.put(num, count);  
+  }
+  return numToCount;  
 }  
   
 public int[] intersect(int[] nums1, int[] nums2) {  
-	Map<Integer, Integer> numToCount = buildIndex(nums1);  
-	List<Integer> matched = consumeMatching(nums2, numToCount);  
-	return matched.stream().mapToInt(num -> num).toArray();  
+  Map<Integer, Integer> numToCount = buildIndex(nums1);  
+  List<Integer> matched = consumeMatching(nums2, numToCount);  
+  return matched.stream().mapToInt(num -> num).toArray();  
 }
 ```
 The new structure reveals the 3 main steps we take to solve this question:

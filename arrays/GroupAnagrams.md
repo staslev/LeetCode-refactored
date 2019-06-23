@@ -19,19 +19,17 @@ If we could come up with function that returned the same key for all anagrams, t
 Here's one of the most upvoted solutions on LeetCode:
 
 ```java
-public class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        if (strs == null || strs.length == 0) return new ArrayList<List<String>>();
-        Map<String, List<String>> map = new HashMap<String, List<String>>();
-        for (String s : strs) {
-            char[] ca = s.toCharArray();
-            Arrays.sort(ca);
-            String keyStr = String.valueOf(ca);
-            if (!map.containsKey(keyStr)) map.put(keyStr, new ArrayList<String>());
-            map.get(keyStr).add(s);
-        }
-        return new ArrayList<List<String>>(map.values());
-    }
+public List<List<String>> groupAnagrams(String[] strs) {
+  if (strs == null || strs.length == 0) return new ArrayList<List<String>>();
+  Map<String, List<String>> map = new HashMap<String, List<String>>();
+  for (String s : strs) {
+    char[] ca = s.toCharArray();
+    Arrays.sort(ca);
+    String keyStr = String.valueOf(ca);
+    if (!map.containsKey(keyStr)) map.put(keyStr, new ArrayList<String>());
+    map.get(keyStr).add(s);
+  }
+  return new ArrayList<List<String>>(map.values());
 }
 ```
 
@@ -53,9 +51,9 @@ Let's translate that to code:
 public List<List<String>> groupAnagrams(String[] strs) {
   Map<String, List<String>> anagrams = new HashMap<>();
   for (String str : strs) {
-		// step 1
+    // step 1
     String key = keyOf(str);
-		// step 2
+    // step 2
     add(anagrams, str, key);
   }
   // step 3
@@ -89,4 +87,3 @@ public List<List<String>> groupAnagrams(String[] strs) {
   return new ArrayList<>(keyedAnagrams.values());
 }
 ```
-

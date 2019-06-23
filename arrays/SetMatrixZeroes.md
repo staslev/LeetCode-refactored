@@ -77,7 +77,7 @@ How about now? Is it any easier to figure our what's being handled where?
 
 ```java
 public void setZeroes(final int[][] matrix) {
-	// step 1
+  // step 1
   final int[] pivots = encodeZeros(matrix);
 
   if (pivots == null) {

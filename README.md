@@ -56,23 +56,23 @@ public void moveZeroes(int[] nums) {
 
  `moveNonZerosToStart` takes care of moving all non zero integers to the start of the array, and returning the first index after the last non zero integer:
 ```java
-private int moveNonZerosToStart(int[] nums) {  
-	int firstNonZeroIndex = 0;  
-	for (int num : nums) {  
-		if (num != 0) {  
-			nums[firstNonZeroIndex++] = num;  	  
-		}
-	}  
-	return firstNonZeroIndex;  
-} 
+private int moveNonZerosToStart(int[] nums) {
+  int firstNonZeroIndex = 0;  
+  for (int num : nums) {  
+    if (num != 0) {  
+      nums[firstNonZeroIndex++] = num;  	  
+    }
+  }  
+  return firstNonZeroIndex;  
+}
 ```
 `fillZeros` makes sure to fill the remainder of the array with zeros, like so:
 ```java
-private void fillZeros(int[] nums, int start) {  
-	for (int i = start; i < nums.length; i++) {  
-		nums[i] = 0;  
-	}
-}  
+private void fillZeros(int[] nums, int start) {
+  for (int i = start; i < nums.length; i++) {
+    nums[i] = 0;
+  }
+}
 ```
 
 
