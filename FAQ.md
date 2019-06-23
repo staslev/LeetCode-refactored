@@ -28,7 +28,7 @@ I'm afraid I didn't.
 
 The solutions I present are the result of grinding the problem over and over again, experimenting with all kinds of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes unlock certain insights, which lead to more changes, which unlock further insights. See also [SB Changes by Kent Beck](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
 
-Personally I think it's another insane blind spot present during whiteboard interviews. Engineers do not get the chance to perform this iterative improvement process and must therefore produce the first-ish code they think of to fit the time (and pressure) constraints. The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions rather than how good of an engineer she or he really is (a.k.a. the corporate whiteboard interview tragedy).
+Personally I think it's another insane blind spot present during whiteboard interviews. Engineers do not get the chance to perform this iterative improvement process and must therefore produce the first-ish code they think of, to fit the time (and pressure) constraints. The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions rather than how good of an engineer she or he really is (a.k.a. the corporate whiteboard interview tragedy).
 
 ---
 

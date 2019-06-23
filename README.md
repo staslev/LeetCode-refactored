@@ -42,7 +42,7 @@ class Solution {
 	    }
 	    while (i < nums.length) {
 		    nums[i++] = 0;
-		}
+      }
 	}
 }
 ```
