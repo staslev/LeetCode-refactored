@@ -32,29 +32,25 @@ In particular I strongly believe in:
 
 A solution can be easily picked up from LeetCode's discussion section:
 ```java
-class Solution {
-	public void moveZeroes(int[] nums) {
-		int i = 0;
-	    for (int n : nums) {
-	        if (n != 0) {
-	           nums[i++] = n;
-	        }	         
-	    }
-	    while (i < nums.length) {
-		    nums[i++] = 0;
-      }
-	}
+public void moveZeroes(int[] nums) {
+  int i = 0;
+  for (int n : nums) {
+    if (n != 0) {
+      nums[i++] = n;
+    }	         
+  }
+  while (i < nums.length) {
+    nums[i++] = 0;
+  }
 }
 ```
 
 It's clean indeed, but could use a little structure.  In fact, if we slightly refactor it, this solution will be able to tell us what actually needs to be done as part of the solution:
 
 ```java
-class Solution {  
-	public void moveZeroes(int[] nums) {  
-		int firstNonZeroIndex = moveNonZerosToStart(nums); // check
-		fillZeros(nums, firstNonZeroIndex); // mate
-	}
+public void moveZeroes(int[] nums) {  
+  int firstNonZeroIndex = moveNonZerosToStart(nums); // check
+  fillZeros(nums, firstNonZeroIndex); // mate
 }
 ```
 
