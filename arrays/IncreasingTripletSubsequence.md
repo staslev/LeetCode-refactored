@@ -1,4 +1,4 @@
-### Increasing Triplet Subsequence
+## Increasing Triplet Subsequence
 
 > Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
 >
@@ -8,7 +8,7 @@
 
 
 
-#### Strategy
+### Strategy
 
 What makes this question especially tricky is the linear time and constant space complexity requirements. Naturally, there's a catch. Or a trick, depends on whether you are the interviewee or the interviewer.
 
@@ -25,7 +25,7 @@ Essentially, it's the second value that gives us the edge here, since once we fi
 
 
 
-#### Code
+### Code
 
 As copied from LeetCode's discussion section (Java top voted, I've change some styling but otherwise it's a good old copy paste):
 
@@ -48,7 +48,7 @@ public boolean increasingTriplet(int[] nums) {
 
 
 
-#### Refactored
+### Refactored
 
 This is indeed a very short and to the point code. Even so, I feel like it is still hard to figure out. In this particular case I'm not sure there's much to do other than to make an extra effort and have the variable names as clear as possible, and even more importantly, have them tell the story.
 
