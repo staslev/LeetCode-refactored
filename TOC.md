@@ -10,4 +10,5 @@
 * [Group Anagrams](arrays/GroupAnagrams.md)
 * [Longest Substring Without Repeating Characters](arrays/LongestSubstringWithoutRepeatingCharacters.md)
 * [Longest Palindromic Substring](arrays/LongestPalindromicSubstring.md)
+* [Increasing Triplet Subsequence](IncreasingTripletSubsequence.md)
 

@@ -10,7 +10,7 @@ And an [FAQ](FAQ.md).
 
 Probably not. Who knows what the world really needs these days.
 
-What I have noticed though, is that existing solution sets, and there's plenty of them on GitHub, tend to focus purely on the algorithmic nature of the problem. Consequently, I believe many of these solutions leave much to be desired as far as *software engineering* is concerned.
+What I have noticed though, is that existing solution sets, and there're plenty of them on GitHub, tend to focus purely on the algorithmic nature of the problem. Consequently, I believe many of these solutions leave much to be desired as far as *software engineering* is concerned.
 
 It could actually be funny, if it wasn't  so tragic, because I presume most of the people who wind up on LeetCode probably do so in order to prepare for an interview for a software engineering position and eventually professionally practise software engineering. 
 What brings things back to the funny zone is that many corporate interviewers put little emphasis on actually checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
