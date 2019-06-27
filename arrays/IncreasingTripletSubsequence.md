@@ -69,17 +69,15 @@ public boolean increasingTriplet(int[] nums) {
   int hasLesserOnLeft = Integer.MAX_VALUE;
 
   for (int num : nums) {
-    if (num == absoluteMin) {
-      // skip
-    } else if (num < absoluteMin) {
-      absoluteMin = num;
-    } else if (num < hasLesserOnLeft) { // absoluteMin < num < hasLesserOnLeft
-      hasLesserOnLeft = num;
-    } else if (hasLesserOnLeft < num) { // absoluteMin < hasLesserOnLeft < num (bingo!)
-      return true;
-    }
+    if (num == absoluteMin) continue;
+    else if (num < absoluteMin) absoluteMin = num;
+    // absoluteMin < num < hasLesserOnLeft
+    else if (num < hasLesserOnLeft) hasLesserOnLeft = num; 
+    // absoluteMin < hasLesserOnLeft < num (bingo!)
+    else if (hasLesserOnLeft < num) return true;
   }
   return false;
 }
+
 ```
 
