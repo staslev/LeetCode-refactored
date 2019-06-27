@@ -48,13 +48,12 @@ Let's translate that to code:
 ```java
 public List<List<String>> groupAnagrams(String[] strs) {
   Map<String, List<String>> anagrams = new HashMap<>();
+  
   for (String str : strs) {
-    // step 1
     String key = keyOf(str);
-    // step 2
     add(anagrams, str, key);
   }
-  // step 3
+  
   return new ArrayList<>(anagrams.values());
 }
 ```

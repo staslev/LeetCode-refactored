@@ -71,17 +71,21 @@ Extracting the for-loop into a separate method and using Java streams for going 
 ```java
 // solution version 2, restructured.
 // Array.sort() + streams
-private boolean seekSortedDuplicates(int[] nums) {  
-  return 
-    IntStream.range(0, nums.length - 1)
-    .anyMatch(i -> nums[i] == nums[i + 1]); 
-}  
-
 public boolean containsDuplicate(int[] nums) {
   Arrays.sort(nums); // check
   return seekSortedDuplicates(nums); // mate
 }
 ```
+Where the helper method is implemented like so:
+
+```java
+private boolean seekSortedDuplicates(int[] nums) {  
+  return 
+    IntStream.range(0, nums.length - 1)
+    .anyMatch(i -> nums[i] == nums[i + 1]); 
+} 
+```
+
 A benefit of using Java streams here, is that the if-clause in the original code which was meant to perform basic validations, can now be relieved.
 If `nums.length == 0` or `nums.length == 1` then `IntStream.range(0, nums.length - 1)` returns an empty stream, in which case `anyMatch(...)` returns `false`, no if-clauses required.
 

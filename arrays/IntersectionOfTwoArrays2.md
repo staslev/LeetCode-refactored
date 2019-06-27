@@ -80,28 +80,6 @@ A number of changes can be made to make things clearer, while keeping the algori
 Applying these changes results in the following code:
 
 ```java
-private List<Integer> consumeMatching(
-  int[] nums2, Map<Integer, Integer> index) {
-  
-  List<Integer> matched = new ArrayList<>();  
-  for (int num : nums2) {
-    if (index.containsKey(num) && index.get(num) > 0) {  
-      matched.add(num);  
-      index.put(num, index.get(num) - 1);  
-      }
-  }  
-  return matched;  
-}  
-  
-private Map<Integer, Integer> buildIndex(int[] nums1) {  
-  Map<Integer, Integer> numToCount = new HashMap<>();  
-  for (int num : nums1) {  
-    int count = numToCount.getOrDefault(num, 0) + 1;  
-    numToCount.put(num, count);  
-  }
-  return numToCount;  
-}  
-  
 public int[] intersect(int[] nums1, int[] nums2) {  
   Map<Integer, Integer> numToCount = buildIndex(nums1);  
   List<Integer> matched = consumeMatching(nums2, numToCount);  
@@ -113,6 +91,32 @@ The new structure reveals the 3 main steps we take to solve this question:
  1. Build a mapping of values to their frequencies (counts)
  3. Match the second array against that mapping
  4. Convert the matched items into an array
+
+Onto the helper methods:
+
+```java
+private Map<Integer, Integer> buildIndex(int[] nums1) {  
+  Map<Integer, Integer> numToCount = new HashMap<>();  
+  for (int num : nums1) {  
+    int count = numToCount.getOrDefault(num, 0) + 1;  
+    numToCount.put(num, count);  
+  }
+  return numToCount;  
+}  
+
+private List<Integer> consumeMatching(
+  int[] nums2, Map<Integer, Integer> index) {
+  
+  List<Integer> matched = new ArrayList<>();  
+  for (int num : nums2) {
+    if (index.containsKey(num) && index.get(num) > 0) {  
+      matched.add(num);  
+      index.put(num, index.get(num) - 1);  
+    }
+  }  
+  return matched;  
+}
+```
 
 In some cases, people argue that clarity comes at the cost of verbosity. 
 While in *some cases* it may be so (and even then, clarity may be well worth it), the above two solutions are on par in terms of LOC.  However, with the latter we have a much clearer solution which we can have easier time reproducing, as well as make things easier on the reader.
