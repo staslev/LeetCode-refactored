@@ -1,14 +1,6 @@
 ## FAQ
 
-#### Q1: Why is your code indentation so ugly?
-
-From my experience this is caused by the infamous tabs vs. spaces issue. 
-
-Let me know where and I'll fix it.
-
-___
-
-#### Q2: Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Isn't long equals bad?
+#### Q: Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Isn't long equals bad?
 
 *Some* of the refactored solutions are indeed longer. You know what, even if *all* of them were longer I'd still use the same argument below. Plus, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.
 
@@ -22,7 +14,7 @@ That said, short (yet convoluted) solutions may be easier to *memorize*. I do be
 
 ---
 
-#### Q3: It's hard to come up with clear and concise solutions on the spot, how did you do that?
+#### Q: It's hard to come up with clear and concise solutions on the spot, how did you do that?
 
 I most definitely did not.
 
@@ -32,5 +24,6 @@ Personally I think it's another insane blind spot present during whiteboard inte
 
 ---
 
+#### Q: Why is your code indentation so ugly?
 
-
+Might be a tabs vs. spaces issue. Let me know where you found it and I'll fix it.

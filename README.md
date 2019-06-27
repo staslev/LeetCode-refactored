@@ -88,7 +88,7 @@ Mostly because when one reads the revised version of the `moveZeroes` method, th
 
 Looking at the original solution, this is hardly the case. Even though it's clean, the cognitive load is far from trivial given the loops and the conditional expression in one of them.
 
-See also Q2 in the [FAQ](FAQ.md) section.
+See also the [FAQ](FAQ.md) section.
 
 ## Dude, do you even know what TLDR  means?
 Damn.
