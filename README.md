@@ -1,6 +1,6 @@
-## Dive right in
+## Refactored solutions for assorted LeetCode questions
 
-Good thing we have a [table of contents](TOC.md).
+Here's a [table of contents](TOC.md).
 
 And an [FAQ](FAQ.md).
 
