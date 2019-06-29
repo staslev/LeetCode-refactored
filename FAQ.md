@@ -18,12 +18,12 @@ That said, short (yet convoluted) solutions may be easier to *memorize*. I do be
 
 I most definitely did not.
 
-The solutions I present are the result of grinding the problem over and over again, experimenting with all kinds of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes unlock certain insights, which lead to more changes, which unlock further insights. See also [SB Changes by Kent Beck](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
+The solutions I present are the result of grinding the problem over and over again, experimenting with all sorts of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes may unlock certain insights, which then lead to more changes, which then unlock further insights. This is was not a write-once code. See also this [recent tweet by Kent Beck](https://twitter.com/KentBeck/status/1144570824692776960) and also his post about [SB Changes](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
 
-Personally I think it's another insane blind spot present during whiteboard interviews. Engineers do not get the chance to perform this iterative improvement process and must therefore produce the first-ish code they think of, to fit the time (and pressure) constraints. The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions rather than how good of an engineer she or he really is (a.k.a. the corporate whiteboard interview tragedy).
+Personally I think it's another huge blind spot during whiteboard interviews. Engineers do not get the chance to perform this iterative improvement process and must therefore produce the first-ish code they think of, in order to fit the time (and pressure) constraints. The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions rather than how good of a software engineer they really are (a.k.a. the corporate whiteboard interview tragedy).
 
 ---
 
 #### Q: Why is your code indentation so ugly?
 
-Might be a tabs vs. spaces issue. Let me know where you found it and I'll fix it.
+Could be a tabs vs. spaces issue. Let me know where you found it and I'll fix it.

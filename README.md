@@ -1,4 +1,4 @@
-## Tell me more
+## Dive right in
 
 Good thing we have a [table of contents](TOC.md).
 
@@ -50,7 +50,7 @@ public void moveZeroes(int[] nums) {
 }
 ```
 
-It's clean indeed, but could use a little structure. In fact, if we slightly refactor it, it is able to tell the reader what's going on:
+It's clean indeed, but could use a little structure. In fact, if we slightly refactor it, this code is happy to tell us what's actually going on:
 
 ```java
 public void moveZeroes(int[] nums) {  
@@ -59,7 +59,8 @@ public void moveZeroes(int[] nums) {
 }
 ```
 
- `moveNonZerosToStart` takes care of moving all non zero integers to the start of the array, and returning the first index after the last non zero integer:
+`moveNonZerosToStart` takes care of moving all non zero integers to the start of the array, and returning the first index after the last non zero integer:
+
 ```java
 private int moveNonZerosToStart(int[] nums) {
   int firstNonZeroIndex = 0;  
@@ -89,6 +90,8 @@ Mostly because when one reads the revised version of the `moveZeroes` method, th
 Looking at the original solution, this is hardly the case. Even though it's clean, the cognitive load is far from trivial given the loops and the conditional expression in one of them.
 
 See also the [FAQ](FAQ.md) section.
+
+
 
 ## Dude, do you even know what TLDR  means?
 Damn.
