@@ -1,20 +1,33 @@
 ## FAQ
 
-#### Q: Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Isn't long equals bad?
+#### Why is it called LeetCode refactored?
 
-*Some* of the refactored solutions are indeed longer. You know what, even if *all* of them were longer I'd still use the same argument below. Plus, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.
+> "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure." 
+>
+> --Martin Fowler, "Refactoring: Improving the Design of Existing Code"
+
+The original solutions (code copy-pasted from LeetCode's discussion section) all boil down to a single method performing a certain task.
+
+The alternative solutions presented here retain the original methods' signatures, yet introduce changes to the internal structure of the code. This fits the above definition perfectly, and therefore:
+
+*LeetCode Refactored*.
+
+---
+#### Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Doesn't long equal bad?
+
+*Some* of the refactored solutions are indeed longer. Even if *all* of them were longer I would still use the same argument👇. Anyway, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.
 
 IMHO the refactored versions are at least as `2-4x` clearer as they are longer.
 
 A solution being shorter, does not necessarily mean it is easier to produce during an interview or that it is otherwise better (in terms of software properties). I am a huge fan of concise code, but not on account of clarity. In fact, I'd probably argue that it is often the other way around. 
 
-Longer clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good at breaking the solution down into building blocks, knowing the major ones is hopefully enough to complete the remaining ones on demand.
+Long and clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good at breaking the solution down into building blocks, knowing the major ones is hopefully enough to complete the remaining ones on demand.
 
-That said, short (yet convoluted) solutions may be easier to *memorize*. I do believe that poetry and code have much in common, but while memorizing the former will make you look sophisticated, memorizing the latter will make you look `null`.
+That said, short and convoluted solutions may be easier to *memorize*. I do believe that poetry and code have much in common, but while memorizing the former will make you look sophisticated, memorizing the latter will make you look `null`.
 
 ---
 
-#### Q: It's hard to come up with clear and concise solutions on the spot, how did you do that?
+#### It's hard to come up with clear and concise solutions on the spot, how did you do that?
 
 I most definitely did not.
 
@@ -24,6 +37,6 @@ Personally I think it's another huge blind spot during whiteboard interviews. En
 
 ---
 
-#### Q: Why is your code indentation so ugly?
+#### Why is your code indentation so ugly?
 
-Could be a tabs vs. spaces issue. Let me know where you found it and I'll fix it.
+Could be a [tabs vs. spaces issue](https://youtu.be/SsoOG6ZeyUI?t=37). Let me know and I'll fix it.
