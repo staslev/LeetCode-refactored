@@ -4,6 +4,8 @@
 >**Note:**  You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 >
 >Solution signature: `int maxProfit(int[] prices)`
+>
+>[Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564/)
 
 
 

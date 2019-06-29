@@ -5,6 +5,8 @@
 > Formally the function should return `true` if there exists `i,j,k` such that `arr[i] < arr[j] < arr[k]` where `0 ≤ i < j < k ≤ n - 1`, otherwise it should return `false`. 
 >
 > Note: Your algorithm should run in O(n) time complexity and O(1) space complexity.
+>
+> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/781/)
 
 
 

@@ -3,6 +3,8 @@
 > Given an array of strings, group anagrams together.
 >
 > Solution signature: `List<List<String>> groupAnagrams(String[] strs)`
+>
+> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/778/)
 
 
 

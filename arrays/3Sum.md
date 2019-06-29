@@ -5,6 +5,8 @@
 > **Note:** The solution set must not contain duplicate triplets.
 >
 > Solution signature: `List<List<Integer>> threeSum(int[] nums)`
+>
+> [Try it on LeetCode](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/776/).
 
 
 

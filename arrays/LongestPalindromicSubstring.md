@@ -3,6 +3,8 @@
 > Given a string **s**, find the longest palindromic substring in **s**. You may assume that the maximum length of **s** is 1000.
 >
 > Solution signature: `String longestPalindrome(String str)`
+>
+> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/780/)
 
 
 
