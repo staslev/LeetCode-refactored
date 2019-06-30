@@ -42,7 +42,7 @@ The solution on LeetCode is quite concise but I believe naming could be better. 
 public int maxProfit(int[] prices) {
   int totalProfit = 0;  
   for (int day = 1; day < prices.length; day++) {  
-    int dailyGain = Math.max(prices[day] - prices[day - 1],0);
+    int dailyGain = Math.max(prices[day] - prices[day - 1], 0);
     totalProfit += dailyGain;
   }
   return totalProfit;  
@@ -61,7 +61,7 @@ The solution can also be expressed using Java streams. I wouldn't say it's bette
 // soloution version 1, restructured + streams.
 public int maxProfit(int[] prices) {  
   return IntStream.range(1, prices.length)  
-   .map(day -> Math.max(0, prices[day] - prices[day - 1]))  
+   .map(day -> Math.max(prices[day] - prices[day - 1], 0))  
    .sum();  
 }
 ```
