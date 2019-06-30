@@ -22,13 +22,13 @@ This can be expressed in code like so, copied from LeetCode's discussion section
 ```java
 // soloution version 1 (seen online)
 public int maxProfit(int[] p) {
-	int res = 0;
-	for(int i = 1; i < p.length; i++) {
-		if(p[i] > p[i-1]) {
-			res += p[i]-p[i-1];
-		}
-	}
-	return res;
+  int res = 0;
+  for(int i = 1; i < p.length; i++) {
+    if(p[i] > p[i-1]) {
+      res += p[i]-p[i-1];
+    }
+  }
+  return res;
 }
 ```
 
