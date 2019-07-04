@@ -33,7 +33,7 @@ I most definitely did not.
 
 The solutions I present are the result of grinding the problem over and over again, experimenting with all sorts of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes may unlock certain insights, which then lead to more changes, which then unlock further insights. This is was not a write-once code. See also this [recent tweet by Kent Beck](https://twitter.com/KentBeck/status/1144570824692776960) and also his post about [SB Changes](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
 
-In my view Iterative improvement requires at least two resources:
+In my view iterative improvement requires at least two resources:
 
 1. Time, due to obvious reasons.
 2. An IDE, since many changes are done using automatic refactoring. Doing this kind of changes by hand can be tricky and error prone.
@@ -46,7 +46,7 @@ The first-ish code that comes to mind is often neither clear nor correct, unless
 
 #### Why do you keep saying *corporate whiteboard interview tragedy*?
 
-I think that the *corporate whiteboard interview* part if pretty clear.
+I think that the *corporate* and the *whiteboard interview* parts are pretty clear.
 
 As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws:
 
