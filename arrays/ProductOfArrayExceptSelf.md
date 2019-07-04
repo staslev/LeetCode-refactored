@@ -9,7 +9,7 @@
 >
 > Solution signature: `int[] productExceptSelf(int[] nums)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-hard/116/array-and-strings/827/)
+> [Try it on LeetCode.](https://leetcode.com/problems/product-of-array-except-self/)
 
 
 

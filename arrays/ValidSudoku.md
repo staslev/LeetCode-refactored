@@ -8,11 +8,9 @@
 >
 > 3. Each of the 9 `3x3` sub-boxes of the grid must contain the digits `1-9` without repetition
 >
-> 
->
 > Solution signature: `boolean isValidSudoku(char[][] board)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/769/)
+> [Try it on LeetCode.](https://leetcode.com/problems/valid-sudoku/)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
 

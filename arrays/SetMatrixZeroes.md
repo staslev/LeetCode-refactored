@@ -4,7 +4,7 @@
 >
 >  Solution signature: `setZeroes(int[][] matrix)`
 >
->  [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/777/)
+>  [Try it on LeetCode.](https://leetcode.com/problems/set-matrix-zeroes/)
 
 
 

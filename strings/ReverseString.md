@@ -8,7 +8,7 @@
 >
 > Solution signature: `void reverseString(char[] s)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/879/)
+> [Try it on LeetCode.](https://leetcode.com/problems/reverse-string/)
 
 
 

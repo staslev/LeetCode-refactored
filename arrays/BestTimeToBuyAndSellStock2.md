@@ -5,7 +5,7 @@
 >
 >Solution signature: `int maxProfit(int[] prices)`
 >
->[Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564/)
+>[Try it on LeetCode.](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
 
 

@@ -8,7 +8,7 @@
 >
 > Solution signature: `int firstUniqChar(String s)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/881/)
+> [Try it on LeetCode.](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 
 

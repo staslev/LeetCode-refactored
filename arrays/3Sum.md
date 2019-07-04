@@ -6,7 +6,7 @@
 >
 > Solution signature: `List<List<Integer>> threeSum(int[] nums)`
 >
-> [Try it on LeetCode](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/776/).
+> [Try it on LeetCode](https://leetcode.com/problems/3sum/).
 
 
 

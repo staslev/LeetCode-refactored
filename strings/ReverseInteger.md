@@ -1,4 +1,4 @@
-## Reverse String 
+## Reverse String
 
 > Given a 32-bit signed integer, reverse digits of an integer.
 >
@@ -7,7 +7,7 @@
 >
 > Solution signature: `int reverse(int x)`
 >
-> [Try it on LeetCode](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/880/).
+> [Try it on LeetCode](https://leetcode.com/problems/reverse-string/).
 
 
 

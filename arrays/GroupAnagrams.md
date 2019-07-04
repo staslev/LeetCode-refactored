@@ -4,7 +4,7 @@
 >
 > Solution signature: `List<List<String>> groupAnagrams(String[] strs)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/778/)
+> [Try it on LeetCode.](https://leetcode.com/problems/group-anagrams/)
 
 
 

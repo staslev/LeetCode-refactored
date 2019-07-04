@@ -4,7 +4,7 @@
 >
 > Solution signature: `int lengthOfLongestSubstring(String str)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/779/)
+> [Try it on LeetCode.](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 
 

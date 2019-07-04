@@ -35,7 +35,7 @@ In particular I strongly believe in:
 
 
 
-A solution can be easily picked up from LeetCode's discussion section:
+A solution can be easily found on LeetCode's discussion section:
 ```java
 public void moveZeroes(int[] nums) {
   int i = 0;
@@ -59,29 +59,7 @@ public void moveZeroes(int[] nums) {
 }
 ```
 
-`moveNonZerosToStart` takes care of moving all non zero integers to the start of the array, and returning the first index after the last non zero integer:
-
-```java
-private int moveNonZerosToStart(int[] nums) {
-  int firstNonZeroIndex = 0;  
-  for (int num : nums) {  
-    if (num != 0) {  
-      nums[firstNonZeroIndex++] = num;  	  
-    }
-  }  
-  return firstNonZeroIndex;  
-}
-```
-`fillZeros` makes sure to fill the remainder of the array with zeros, like so:
-```java
-private void fillZeros(int[] nums, int start) {
-  for (int i = start; i < nums.length; i++) {
-    nums[i] = 0;
-  }
-}
-```
-
-
+then it's a matter of implementing the building blocks: `moveNonZerosToStart` and `fillZeros`. Which is a lot easier now that we know how these building blocks are going to be used to get us where we want.
 
 #### So why is the latter better than the former?
 

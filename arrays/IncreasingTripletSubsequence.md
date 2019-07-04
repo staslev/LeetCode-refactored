@@ -6,7 +6,7 @@
 >
 > Note: Your algorithm should run in O(n) time complexity and O(1) space complexity.
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/781/)
+> [Try it on LeetCode.](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
 
 

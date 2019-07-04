@@ -4,7 +4,7 @@
 >
 > Solution signature: `String longestPalindrome(String str)`
 >
-> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/780/)
+> [Try it on LeetCode.](https://leetcode.com/problems/longest-palindromic-substring/)
 
 
 
