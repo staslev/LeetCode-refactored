@@ -63,19 +63,25 @@ As for the tragedy, well… in my personal view whiteboard interviews have a num
    - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (quickly?), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
    - There's also a physiological factor here, if you take a software engineer who has been practicing their craft for 20 years and ask them to study the magic behind 3Sum, 8-queens, and other interview gems, well, they may not be all that happy to do so.
 
-In light of these considerable issues, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
 
-Many, including those who work (or worked) at FAANG, justify whiteboard interviews by saying they allow software companies to scale.
+
+Many justify whiteboard interviews by saying they allow software companies to scale.
 
 > "**To scale**, Facebook is willing to take some false negatives and we both pay the price for it in this quadrant."
->
-> A [post](https://www.facebook.com/notes/kent-beck/fear-leads-to-anger-primary-and-secondary-emotions/1708089742557216/) by Kent Beck wrote after he was asked to (re)interview by Facebook, and [another one](https://www.quora.com/How-was-Kent-Beck-recruited-to-Facebook) on Quora. 
->
-> (If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casualty to the corporate whiteboard interview tragedy, what should we mortals do?)
+
+A  [post](https://www.facebook.com/notes/kent-beck/fear-leads-to-anger-primary-and-secondary-emotions/1708089742557216/) Kent Beck wrote after he had been asked to take what I assume was a whiteboard interview at Facebook. 
+
+> best move--pulling out my 25-year-old Prolog skillz to solve 8 Queens
+
+[Another evidence of that lovely experience](https://www.quora.com/How-was-Kent-Beck-recruited-to-Facebook) on Quora. 
+
+If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casualty to the corporate whiteboard interview tragedy, what should we mortals do?
 
 Somehow the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. 
 
 Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
+
+In light of the considerable issues above, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
 
 ---
 
