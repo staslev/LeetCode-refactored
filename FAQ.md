@@ -77,9 +77,7 @@ A  [post](https://www.facebook.com/notes/kent-beck/fear-leads-to-anger-primary-a
 
 If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casualty to the corporate whiteboard interview tragedy, what should we mortals do?
 
-Somehow the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. 
-
-Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
+Somehow the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
 
 In light of the considerable issues above, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
 
