@@ -51,7 +51,7 @@ I think that the *corporate* and the *whiteboard interview* parts are pretty cle
 As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws:
 
 1. Unrepresentative Context
-   - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to doing once (if) they get past the whiteboard interviews and start their *actual job*.
+   - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to dealing with once (if) they get past the whiteboard interviews and start their *actual job*.
 2. Unrepresentative Method
    - Online resources are not available during whiteboard interviews. Yet today's software engineering is deeply rooted in being able to acquire knowledge on demand, typically from online resources. The fact one doesn't know something right now may change in a few hours, and change back again in a week or so time. In and out.
 3. Questionable KPIs
