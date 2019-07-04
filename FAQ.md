@@ -60,7 +60,7 @@ As for the tragedy, well… in my personal view whiteboard interviews have a num
 4. Inconsistent
    * Chance and luck are great factors in whiteboard interviews. A number of FAANG employees I talked to, said they were unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be a little more consistent and chance resilient.
 5. Juniority Bias
-   - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (quickly?), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
+   - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (Quickly? Because otherwise it was a poor choice of name), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
    - There's also a physiological factor here, if you take a software engineer who has been practicing their craft for 20 years and ask them to study the magic behind 3Sum, 8-queens, and other interview gems, well, they may not be all that happy to do so.
 
 
