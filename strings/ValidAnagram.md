@@ -18,7 +18,7 @@
 
 1. Scan the first (or second) input string and count how many times each character appears/
 2. Scan other input string and update the char counts of the previously built counts
-3. Check whether the counts are all `0`, i.e., whether all chars in `s` were matched by chars in `t`
+3. Check whether the counts are all `0`, i.e., whether all chars in `s` were matched by chars in `t` and vice versa
 
 
 
