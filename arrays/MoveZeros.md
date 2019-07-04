@@ -40,8 +40,8 @@ It's clean indeed, but could use a little structure.
 
 ```java
 public void moveZeroes(int[] nums) {  
-  int firstNonZeroIndex = moveNonZerosToStart(nums); // check
-  fillZeros(nums, firstNonZeroIndex); // mate
+  int nonZeroBoundary = moveNonZerosToStart(nums); // check
+  fillZeros(nums, nonZeroBoundary); // mate
 }
 ```
 
