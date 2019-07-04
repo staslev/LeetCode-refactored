@@ -56,7 +56,7 @@ As for the tragedy, well… in my personal view whiteboard interviews have a num
    - Online resources are not available during whiteboard interviews. Yet today's software engineering is deeply rooted in being able to acquire knowledge on demand, typically from online resources. The fact one doesn't know something right now may change in a few hours, and change back again in a week or so time. In and out.
 3. Questionable KPIs
    - A correlation between one's ability to do well in whiteboard interviews and one's competence as a software engineer is yet to be established. It could be that people who do well in whiteboard interviews have a great memory, or great puzzle solving skills, but that is not what necessarily constitutes a competent software engineer.
-   - If it does exist, it's a shame no data was made publicly available.
+   - If evidence of such a correlation does exist, it's a shame no data was made publicly available. Or at least I wasn't able to get my hands on it.
 4. Inconsistent
    * Chance and luck are great factors in whiteboard interview. A number of FAANG employees I have talked to, say they are unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be based on skill rather than luck.
 5. Juniority Bias
