@@ -21,7 +21,7 @@ Personally I happen to believe in software engineering practices, and wish more 
 
 In particular I strongly believe in:
  - A very *low tolerance for unreadable* code
- - Code that reflects an *intuitive mental model* of the solution
+ - Code that reflects an *intuitive mental model*
 
 
 
