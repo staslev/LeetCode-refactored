@@ -18,3 +18,4 @@
 * [Reverse String](strings/ReverseString.md)
 * [Reverse Integer](strings/ReverseInteger.md)
 * [First Unique Character in a String](strings/FirstUniqueCharacterString.md)
+* [ValidAnagram](strings/ValidAnagram.md)
