@@ -33,7 +33,49 @@ I most definitely did not.
 
 The solutions I present are the result of grinding the problem over and over again, experimenting with all sorts of code changes, and inspecting whether applying them results in an improved code, or just a different one. The process of making code clearer is iterative. Some changes may unlock certain insights, which then lead to more changes, which then unlock further insights. This is was not a write-once code. See also this [recent tweet by Kent Beck](https://twitter.com/KentBeck/status/1144570824692776960) and also his post about [SB Changes](https://medium.com/@kentbeck_7670/bs-changes-e574bc396aaa). 
 
-Personally I think it's another huge blind spot during whiteboard interviews. Engineers do not get the chance to perform this iterative improvement process and must therefore produce the first-ish code they think of, in order to fit the time (and pressure) constraints. The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions rather than how good of a software engineer they really are (a.k.a. the corporate whiteboard interview tragedy).
+In my view Iterative improvement requires at least two resources:
+
+1. Time, due to obvious reasons.
+2. An IDE, since many changes are done using automatic refactoring. Doing this kind of changes by hand can be tricky and error prone.
+
+During a whiteboard interview people have neither, which I believe is a shame (literally). 
+
+The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions from memory rather than how good of a software engineer they really are (a.k.a. *the corporate whiteboard interview tragedy*).
+
+---
+
+#### Why do you keep saying *corporate whiteboard interview tragedy*?
+
+I think that the *corporate whiteboard interview* part if pretty clear.
+
+As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws:
+
+1. Unrepresentative Context
+   - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to doing once (if) they get past the whiteboard interviews and start their *actual job*.
+2. Unrepresentative Method
+   - Online resources are not available during whiteboard interviews. Yet today's software engineering is deeply rooted in being able to acquire knowledge on demand, typically from online resources. The fact one doesn't know something right now may change in a few hours, and change back again in a week or so time. In and out.
+3. Questionable KPIs
+   - A correlation between one's ability to do well in whiteboard interviews and one's competence as a software engineer is yet to be established. It could be that people who do well in whiteboard interviews have a great memory, or great puzzle solving skills, but that is not what necessarily constitutes a competent software engineer.
+   - If it does exist, it's a shame no data was made publicly available.
+4. Inconsistent
+   * Chance and luck are great factors in whiteboard interview. A number of FAANG employees I have talked to, say they are unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be based on skill rather than luck.
+5. Juniority Bias
+   - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (quickly?), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
+   - There's also a physiological factor here, if you take a software engineer who has been practicing their craft for 20 years and ask them to study the magic behind 3Sum, 8-queens, and other interview gems, well, they may not be all that happy to do so.
+
+In light of these considerable issues, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
+
+Many, including those who work (or worked) at FAANG, justify whiteboard interviews by saying they allow software companies to scale.
+
+> "**To scale**, Facebook is willing to take some false negatives and we both pay the price for it in this quadrant."
+>
+> A [post](https://www.facebook.com/notes/kent-beck/fear-leads-to-anger-primary-and-secondary-emotions/1708089742557216/) by Kent Beck wrote after he was asked to (re)interview by Facebook, and [another one](https://www.quora.com/How-was-Kent-Beck-recruited-to-Facebook) on Quora. 
+>
+> (If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casualty to the corporate whiteboard interview tragedy, what should we mortals do?)
+
+Somehow the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. 
+
+Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
 
 ---
 
