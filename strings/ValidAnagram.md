@@ -85,3 +85,6 @@ private boolean isAllZeros(int[] index) {
 }
 ```
 
+####Follow up
+
+When the string is not restricted to only lowercase letters, using an array with fixed size is no longer a viable solution since the ["alphabet" can now be much, much larger](https://stackoverflow.com/questions/5924105/how-many-characters-can-be-mapped-with-unicode). However, to overcome this hurdle we only have to replace the data structure used to keep track of the counts. A `Map<Character, Integer>` would fit the bill, see also [First Unique Character in a String](strings/FirstUniqueCharacterString.md) where I have provided more details.
