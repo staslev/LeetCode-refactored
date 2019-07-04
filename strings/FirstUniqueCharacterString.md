@@ -5,6 +5,10 @@
 > If it doesn't exist, return -1.
 >
 > **Note:** You may assume the string contain only lowercase letters.
+>
+> Solution signature: `int firstUniqChar(String s)`
+>
+> [Try it on LeetCode.](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/881/)
 
 
 
