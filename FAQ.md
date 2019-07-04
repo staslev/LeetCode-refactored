@@ -58,7 +58,7 @@ As for the tragedy, well… in my personal view whiteboard interviews have a num
    - A correlation between one's ability to do well in whiteboard interviews and one's competence as a software engineer is yet to be established. It could be that people who do well in whiteboard interviews have a great memory, or great puzzle solving skills, but that is not what necessarily constitutes a competent software engineer.
    - If evidence of such a correlation does exist, it's a shame no data was made publicly available. Or at least I wasn't able to get my hands on it.
 4. Inconsistent
-   * Chance and luck are great factors in whiteboard interview. A number of FAANG employees I have talked to, say they are unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be based on skill rather than luck.
+   * Chance and luck are great factors in whiteboard interviews. A number of FAANG employees I talked to, said they were unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be a little more consistent and chance resilient.
 5. Juniority Bias
    - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (quickly?), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
    - There's also a physiological factor here, if you take a software engineer who has been practicing their craft for 20 years and ask them to study the magic behind 3Sum, 8-queens, and other interview gems, well, they may not be all that happy to do so.
