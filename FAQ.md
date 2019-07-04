@@ -35,10 +35,12 @@ The solutions I present are the result of grinding the problem over and over aga
 
 In my view iterative improvement requires at least two resources:
 
-1. Time, due to obvious reasons.
-2. An IDE, since many changes are done using automatic refactoring. Doing this kind of changes by hand can be tricky and error prone.
+1. Time
+   * Because it takes time for the wheels to turn.
+2. An IDE
+   * Because that's where code is written, y'all. And because automatic refactoring is a must. Performing this kind of changes manually is extremely error prone and is essentially asking for trouble.
 
-During a whiteboard interview people have neither, which I believe is a shame (literally). 
+During whiteboard interviews interviewees typically have neither, which I believe is a shame (literally). 
 
 The first-ish code that comes to mind is often neither clear nor correct, unless producing this particular code has been drilled to death. In which case what the interview really checks is how well one produces LeetCode solutions from memory rather than how good of a software engineer they really are (a.k.a. *the corporate whiteboard interview tragedy*).
 
