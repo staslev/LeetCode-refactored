@@ -64,7 +64,7 @@ public boolean containsDuplicate(int[] nums) {
 
 
 
-###Refactored
+### Refactored
 
 #### Solution version 1
 
@@ -98,7 +98,7 @@ The latter version makes it very clear that the solution consists of two main st
 
 If you really insist, a check for a `null` input can be added in the beginning. Whether it should or should not be there is debatable. In the scope of an interview it might be worth asking if getting a `null` as an input is a plausible scenario.
 
-#### solution version 2
+#### Solution version 2
 
 Since `Set#add()` returns `false` for duplicates, all we need to make sure of is that invoking it on every element in the input array returns `true`.
 
