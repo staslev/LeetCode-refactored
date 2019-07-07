@@ -209,17 +209,17 @@ This separation is a step in the right direction, but we're still kinda struggli
       return comparableIndexPairs.get();
     }
   }
-```
+  ```
+
   
+
 The iterator code has a number of optimizations in place to make `hasNext()` and `next()` work efficiently and in harmony. Each time the iterator is asked whether it `hasNext()` it checks its one-sized cache. If the cache has an item to offer, `true` is returned, otherwise it tries to compute the next element and stores it in the cache. If a new element is successfully computed, `true` is returned, otherwise `false`. The `next()` method consumes the one-sized cache, or produces a new element using the supplier passed in to the iterator's ctor. Generally `hasNext()` is to be called prior to invoking `next()`, while in this case correctness is maintained even if it doesn't. 
-  
-  The iterator class is a stretch, and I wouldn't try to pull it off during an actual interview (see also the "Epilogue" section). That said, in term's of software (over)engineering I think it's a nice exercise demonstrating how streams and iterators interact, and serve the purpose of modularity.
-  
-  
-  
-  Anyway, now that we have a comparable index pair iterator at our disposal:
-  
-  ```java
+
+The iterator class is a stretch, and I would not try to pull it off during an actual interview (see also the "Epilogue" section). That said, in term's of software (over)engineering I think it's a nice exercise demonstrating how streams and iterators interact, and serve the purpose of modularity.
+
+Anyway, now that we have a comparable index pair iterator at our disposal:
+
+```java
   private Stream<Integer[]> comparableIndexPairStream(String str) {
     return StreamSupport.stream(
       Spliterators.spliteratorUnknownSize(
@@ -227,10 +227,10 @@ The iterator code has a number of optimizations in place to make `hasNext()` and
         0),
       false);
   }
-  ```
-  
-  and finally, a Java 8 alternative to the version which used `takeWhile` only available in Java 9+:
-  
+```
+
+and finally, a Java 8 alternative to the version which used `takeWhile` only available in Java 9+:
+
   ```java
   public boolean isPalindrome(String s) {
     if (s.equals("") || s.length() == 1) {
@@ -242,7 +242,6 @@ The iterator code has a number of optimizations in place to make `hasNext()` and
       .allMatch(indexPair -> caseInsensitiveMatch(indexPair, s));
   }
   ```
-  
 
 ### Epilogue
 
