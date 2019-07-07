@@ -19,9 +19,10 @@ This question mostly about understanding some properties of integers and the dec
 
 `num % 10` is the last digit in `num`.
 
-Also worth noting is that when we perform an arithmetic operation on `num` which results in an overflow, performing the opposite operation may or may not result in the original integer. However, if the result does NOT equal to the original value, overflow MUST have occurred.
+Another thing worth noting is the overflow thingy. There's always a ton of discussion around integer overflow, and how it can be detected. In the *general case* I'd go with one of the following:
 
-For example, `Integer.MAX_VALUE * 2 + 5 = 3`, `(3 - 5) / 2 = -1` and  `Integer.MAX_VALUE != -1`. Sometimes it can overflow back, `Integer.MAX_VALUE + 1 = Integer.MIN_VALUE` and `Integer.MIN_VALUE - 1 = Integer.MAX_VALUE`. The point being is that if the reverse math gives a different result than the original number, overflow MUST have occurred.
+* Using `long` and checking `Integer.MAX_VALUE`/`Integer.MIN_VALUE` (or narrowing down to `int` and checking the result)
+* Using `Math.xxxExact(x, y)` which throws an `ArithmeticException` when things overflow
 
 Armed with these insights we now need to iterate over the input `num` and assemble the reversed integer.
 
@@ -48,6 +49,14 @@ public int reverse(int x) {
   return result;
 }
 ```
+
+In this solution overflow is detected using the following check:
+
+```java
+(newResult - tail) / 10 != result
+```
+
+It should be noted that in the general case, this may not be sufficient to determine whether an overflow has occurred. For example, if `result` is `214748364` and `tail` is `9` then `newResult = -2147483647`. Then,`(-2147483647 - 9)/10` is again `214748364`, i.e.,  `(newResult - tail) / 10 == result` in the present of an overflow. This would mean that the reversing the number `9463847412` would not return `0` as required. However, since the question states that the input is a 32-bit integer, `9463847412` falls outside the input range and need not be considered. The 32-bit restriction on the input makes the check `(newResult - tail) / 10 != result` sufficiently strong to detect overflows within the given input range.
 
 
 
