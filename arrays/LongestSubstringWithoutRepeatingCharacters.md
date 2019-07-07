@@ -55,7 +55,7 @@ public int lengthOfLongestSubstring(String str) {
 
   while (stretchRight(window, str, seen) + 1 < str.length()) {
     longest = Math.max(longest, windowLength(window));
-    adjustForDuplicate(window, str, seen);
+    adjustWindowForDuplicate(window, str, seen);
   }
 
   return Math.max(longest, windowLength(window));
@@ -70,10 +70,10 @@ I intentionally keep this main method comment free so it's easier to focus solel
 
 In order to properly handle cases where the loop is skipped, i.e., in cases where `window.end + 1 >= str.length()` which can be the case when `str.length() == 0` or `str.length() == 1` we perform one last `Math.max(longest, windowLength(window))` before returning the final answer.
 
-Onto the helper methods.Since we'll be dealing with `window.start` and `window.end` quite a lot, I'd recommend making the access to a window's start and end coordinates extremely easy and clear.
+Since we'll be dealing with `window.start` and `window.end` quite a lot, I'd recommend making the access to a window's start and end coordinates extremely easy and clear.
 
 ```java
-// cosmetics, to allow window[START/END] over window[0/1]
+// cosmetics, to allow window[START/END] instead of window[0/1]
 private static final int START = 0;
 private static final int END = 1;
 ```
@@ -87,13 +87,13 @@ private int windowLength(int[] window) {
 }
 ```
 
-`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `uniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
+`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
 
 ```java
 private int stretchRight(int[] window, String str, Map<Character, Integer> seen) {
   int extendedEnd = window[END];
   while (extendedEnd < str.length() &&
-    uniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
+    isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
     seen.put(str.charAt(extendedEnd), extendedEnd);
     extendedEnd++;
   }
@@ -103,17 +103,17 @@ private int stretchRight(int[] window, String str, Map<Character, Integer> seen)
 ```
 
 ```java
-private boolean uniqueAfterWindowStart(char aChar,
-                                       int windowStart,
-                                       Map<Character, Integer> seen) {
+private boolean isUniqueAfterWindowStart(char aChar,
+                                         int windowStart,
+                                         Map<Character, Integer> seen) {
   return !seen.containsKey(aChar) || seen.get(aChar) < windowStart;
 }
 ```
 
-`adjustForDuplicate` is responsible for making window adjustments once a duplicate is known to be at index `window.end + 1`:
+`adjustWindowForDuplicate` is responsible for making window adjustments once a duplicate is known to be at index `window.end + 1`:
 
 ```java
-private void adjustForDuplicate(int[] window, String str, Map<Character, Integer> seen) {
+private void adjustWindowForDuplicate(int[] window, String str, Map<Character, Integer> seen) {
   int windowEndPlusOne = window[END] + 1;
   char duplicateChar = str.charAt(windowEndPlusOne);
   seen.remove(duplicateChar);
