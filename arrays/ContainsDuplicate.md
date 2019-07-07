@@ -42,7 +42,7 @@ public boolean containsDuplicate(int[] nums) {
 }
 ```
 
-The sorting solution code looks like so, again, copied from LeetCode's discussion section:
+The sorting solution code looks like so (also copied from LeetCode's discussion section):
 ```java
 // solution version 2 (seen online)
 // o(nlogn) time, o(n) space (see also "Elements of 
