@@ -26,7 +26,7 @@ In particular I advocate for:
 
 
 
-## That's a lot of words. TLDR please?
+### That's a lot of words. TLDR please?
 
 > **Move Zeros**
 >
