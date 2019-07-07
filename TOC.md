@@ -1,4 +1,4 @@
-# Assorted LeetCode solutions
+# LeetCode Refactored
 
 ## Arrays
 * [Best Time to Buy and Sell Stock II](arrays/BestTimeToBuyAndSellStock2.md)
@@ -19,3 +19,4 @@
 * [Reverse Integer](strings/ReverseInteger.md)
 * [First Unique Character in a String](strings/FirstUniqueCharacterString.md)
 * [Valid Anagram](strings/ValidAnagram.md)
+* [Valid Palindrome](strings/ValidPalindrome.md)
