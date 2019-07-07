@@ -1,4 +1,4 @@
-## Refactored solutions for assorted LeetCode questions
+## LeetCode Refactored
 
 Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
