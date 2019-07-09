@@ -12,7 +12,7 @@
 
 ### Strategy
 
-Since we need unique triplets, we need to make sure we skip/exclude triplets we already have. One way to achieve this would be to consider triplets which *start* with the number `n` for each a given number `n` in the input array. Note that a triplet `3,-2,-1` and the triplet `3,-1,-2` both start with `3` but are non unique and we should include only one of them. 
+Since we are required to produce unique triplets, we need to make sure we skip/exclude triplets we already have. One way to achieve this would be to consider triplets which *start* with the number `n` for each a given number `n` in the input array. Note that a triplet `3,-2,-1` and the triplet `3,-1,-2` both start with `3` but are non unique and we should include only one of them. 
 
 How can we avoid including such duplicates in the final answer?
 
@@ -58,7 +58,7 @@ public List<List<Integer>> threeSum(int[] num) {
 
 It's a master piece, a delicate tango of nested loops and conditional flows.
 
-Kinda hard to actually figure out what's going on though. Even after we are familiar with the strategy. Even after you stare at for a couple of minutes.
+Kinda hard to actually figure out what's going on though. Even after we are familiar with the strategy. Even after you stare at it for a couple of minutes.
 
 
 
