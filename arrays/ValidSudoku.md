@@ -143,8 +143,6 @@ Once we know how to translate box indices to box 'coordinates' it's just a matte
 ```java
 private boolean validateSubBoxes(char[][] board) {
   return IntStream.rangeClosed(0, board.length - 1)
-    // could use also method references, but this way we
-    // get to explicitly say "toBoxCoordinates(boxIndex)"
     .mapToObj(this::toBoxCoordinates)
     .allMatch(coordinates -> isValidBox(board,
                                         coordinates[0],
