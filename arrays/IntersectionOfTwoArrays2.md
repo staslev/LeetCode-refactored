@@ -121,7 +121,7 @@ private List<Integer> consumeMatching(
 ```
 
 In some cases, people argue that clarity comes at the cost of verbosity. 
-While in *some cases* it may be so (and even then, clarity may be well worth it), the above two solutions are on par in terms of LOC.  However, with the latter we have a much clearer solution which we can have easier time reproducing, as well as make things easier on the reader.
+While in *some cases* it may be so (and even then, clarity may be well worth it), the above two solutions are on par in terms of LOC.  However, with the latter we have a much clearer solution which we will probably have an easier time reproducing.
 
 Personally, when I read lines such as `numToCount.put(num, count)` it makes me think that the person who wrote this code had my (i.e., the reader's) wellbeing on their mind, and it makes me feel all warm inside.
 
