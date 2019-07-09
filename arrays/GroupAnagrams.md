@@ -80,9 +80,9 @@ We could also employ Java streams, where a grouping collector does the heavy lif
 
 ```java
 public List<List<String>> groupAnagrams(String[] strs) {
-  Map<String, List<String>> keyedAnagrams =
-    Arrays.stream(strs)
-    .collect(Collectors.groupingBy(this::keyOf));
+  Map<String, List<String>> keyedAnagrams = 
+    Arrays.stream(strs).collect(Collectors.groupingBy(this::keyOf));
+  
   return new ArrayList<>(keyedAnagrams.values());
 }
 ```
