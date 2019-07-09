@@ -109,4 +109,4 @@ public boolean containsDuplicate(int[] nums) {
 }
 ```
 
-Note that `allMatch` may not beyond the first element that yields `false`, short circuit style.
+Note that `allMatch` may not be executed after the first element that yields `false`, short circuit style.
