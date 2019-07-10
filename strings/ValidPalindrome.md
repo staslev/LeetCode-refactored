@@ -79,7 +79,7 @@ Let's untangle the two concerns mentioned above so that each can be handled sepa
 One way to go about this separation is to have a `Supplier<Integer[]>` which produces all the comparable pairs. Once we have it in place we can code the solution like so:
 
 ```java
-public boolean isPalindrome2(String s) {
+public boolean isPalindrome(String s) {
   if (s.equals("") || s.length() == 1) {
     return true;
   }
@@ -149,7 +149,7 @@ This separation is a step in the right direction, but we're still kinda struggli
 * In Java 9, where we have `Stream#takeWhile()` it looks like so:
   
   ```java
-  public boolean isPalindrome1(String s) {
+  public boolean isPalindrome(String s) {
     if (s.equals("") || s.length() == 1) {
       return true;
     }
