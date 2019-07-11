@@ -15,7 +15,7 @@ The alternative solutions presented here retain the original methods' signatures
 ---
 #### Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Doesn't long equal bad?
 
-*Some* of the refactored solutions are indeed longer. Even if *all* of them were longer I would still use the same argument👇. Anyway, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.
+*Some* of the refactored solutions are indeed longer. Even if *all* of them were longer I would still use the same argument (below👇). Anyway, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.
 
 IMHO the refactored versions are at least as `2-4x` clearer as they are longer.
 
@@ -67,8 +67,8 @@ As for the tragedy, well… in my personal view whiteboard interviews have a num
 3. Questionable KPIs
    - A correlation between one's ability to do well in whiteboard interviews and one's competence as a software engineer is yet to be established. It could be that people who do well in whiteboard interviews have a great memory, or great puzzle solving skills, but that is not what necessarily constitutes a competent software engineer.
    - If evidence of such a correlation does exist, it's a shame no data was made publicly available. Or at least I wasn't able to get my hands on it.
-4. Inconsistent
-   * Chance and luck are great factors in whiteboard interviews. A number of FAANG employees I talked to, said they were unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be a little more consistent and chance resilient.
+4. Inconsistent Results
+   * Chance and luck are great factors in whiteboard interviews. A number of FAANG employees I talked to, said they were unsure of whether they would have made the cut had they re-interviewed. I would expect engineering interviews to be a little more consistent and chance resilient than "oh, good thing they asked me that question I stumbled upon just the other day".
 5. Juniority Bias
    - Senior software engineers who spent a while working in the industry have all but forgotten how quicksort works (Quickly? Because otherwise it was a poor choice of name), or what it takes to construct a heap. Graduates coming straight from college may have these subjects present in their cache.
    - There's also a physiological factor here, if you take a software engineer who has been practicing their craft for 20 years and ask them to study the magic behind 3Sum, 8-queens, and other interview gems, well, they may not be all that happy to do so.
@@ -83,7 +83,7 @@ A  [post](https://www.facebook.com/notes/kent-beck/fear-leads-to-anger-primary-a
 
 > best move--pulling out my 25-year-old Prolog skillz to solve 8 Queens
 
-[Another evidence of that lovely experience](https://www.quora.com/How-was-Kent-Beck-recruited-to-Facebook) on Quora. 
+[That's another evidence of that lovely experience](https://www.quora.com/How-was-Kent-Beck-recruited-to-Facebook) on Quora. 
 
 If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casualty to the corporate whiteboard interview tragedy, what should we mortals do?
 
