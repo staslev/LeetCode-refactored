@@ -20,3 +20,5 @@
 * [First Unique Character in a String](strings/FirstUniqueCharacterString.md)
 * [Valid Anagram](strings/ValidAnagram.md)
 * [Valid Palindrome](strings/ValidPalindrome.md)
+* [String to Integer](strings/StringToInteger.md)
+* [StrStr](strings/StrStr.md)
