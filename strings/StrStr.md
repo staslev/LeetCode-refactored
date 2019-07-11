@@ -111,8 +111,9 @@ Similarly, we can implement the `match(..)` using streams:
 ```java
 private boolean matchFrom(int start, String needle, String haystack) {
   return canMatch(needle, haystack, start) &&
-    IntStream.range(0, needle.length())
-    .allMatch(i -> haystack.charAt(start + i) == needle.charAt(i));
+    IntStream.range(start, needle.length())
+    .allMatch(i -> start + i < haystack.length()
+              && haystack.charAt(start + i) == needle.charAt(i));
 }
 ```
 
