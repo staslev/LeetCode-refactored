@@ -56,7 +56,7 @@ It's clean indeed, but could use a little structure. In fact, if we slightly ref
 ```java
 public void moveZeroes(int[] nums) {  
   int nonZeroBoundary = moveNonZerosToStart(nums); // check
-  fillZeros(nums, nonZeroBoundary); // mate
+  fillZeros(nonZeroBoundary, nums); // mate
 }
 ```
 
