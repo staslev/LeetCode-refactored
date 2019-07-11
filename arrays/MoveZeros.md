@@ -41,7 +41,7 @@ It's clean indeed, but could use a little structure.
 ```java
 public void moveZeroes(int[] nums) {  
   int nonZeroBoundary = moveNonZerosToStart(nums); // check
-  fillZeros(nums, nonZeroBoundary); // mate
+  fillZeros(nonZeroBoundary, nums); // mate
 }
 ```
 
@@ -62,7 +62,7 @@ private int moveNonZerosToStart(int[] nums) {
 `fillZeros` makes sure to fill the remainder of the array with zeros, like so:
 
 ```java
-private void fillZeros(int[] nums, int start) {
+private void fillZeros(int start, int[] nums) {
   for (int i = start; i < nums.length; i++) {
     nums[i] = 0;
   }

@@ -53,7 +53,7 @@ public List<List<String>> groupAnagrams(String[] strs) {
   
   for (String str : strs) {
     String key = keyOf(str);
-    add(anagrams, str, key);
+    add(str, key, anagrams);
   }
   
   return new ArrayList<>(anagrams.values());
@@ -69,7 +69,7 @@ private String keyOf(String str) {
   return new String(chars);
 }
 
-private void add(Map<String, List<String>> anagrams, String str, String key) {
+private void add(String str, String key, Map<String, List<String>> anagrams) {
   List<String> group = anagrams.getOrDefault(key, new ArrayList<>());
   group.add(str);
   anagrams.put(key, group);

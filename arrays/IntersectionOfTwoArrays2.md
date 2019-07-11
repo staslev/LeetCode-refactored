@@ -82,10 +82,10 @@ A number of changes can be made to make things clearer, while keeping the algori
 Applying these changes results in the following code:
 
 ```java
-public int[] intersect(int[] nums1, int[] nums2) {  
-  Map<Integer, Integer> numToCount = buildIndex(nums1);  
-  List<Integer> matched = consumeMatching(nums2, numToCount);  
-  return matched.stream().mapToInt(num -> num).toArray();  
+public int[] intersect(int[] nums1, int[] nums2) {
+  Map<Integer, Integer> numToCount = buildIndex(nums1);
+  List<Integer> common = matchIndex(numToCount, nums2);
+  return common.stream().mapToInt(num -> num).toArray();
 }
 ```
 The new structure reveals the 3 main steps we take to solve this question:
@@ -106,18 +106,18 @@ private Map<Integer, Integer> buildIndex(int[] nums1) {
   return numToCount;  
 }  
 
-private List<Integer> consumeMatching(
-  int[] nums2, Map<Integer, Integer> index) {
-  
-  List<Integer> matched = new ArrayList<>();  
+private List<Integer> matchIndex(Map<Integer, Integer> index,
+                                 int[] nums2) {
+  List<Integer> matched = new ArrayList<>();
   for (int num : nums2) {
-    if (index.containsKey(num) && index.get(num) > 0) {  
-      matched.add(num);  
-      index.put(num, index.get(num) - 1);  
+    if (index.containsKey(num) && index.get(num) > 0) {
+      matched.add(num);
+      index.put(num, index.get(num) - 1);
     }
-  }  
-  return matched;  
+  }
+  return matched;
 }
+
 ```
 
 In some cases, people argue that clarity comes at the cost of verbosity. 

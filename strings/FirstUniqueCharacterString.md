@@ -58,20 +58,19 @@ Using an array is an optimisation aimed at squeeing the last ounce of performanc
 Anyhow, let's refactor the code so that the two steps we devised in the strategy are clearly reflected in the code:
 
 ```java
-public int firstUniqChar(String s) {
-  int[] freq = buildCharIndex(s);
-  return firstUnique(s, freq);
+public int firstUniqeChar(String s) {
+  int[] frequencies = buildCharIndex(s);
+  return firstUnique(s, frequencies);
 }
 ```
 
 The `buildCharIndex` method is pretty straight forward, we traverse the string and keep track of how many times we've seen it so far.
 
 ```java
-private int[] buildCharIndex(String s) {
+private int[] buildIndex(String s) {
   int[] freq = new int[26];
-  for(int i = 0; i < s.length(); i ++) {
-    freq[s.charAt(i) - 'a'] ++;
-  }
+  for(int i = 0; i < s.length(); i ++)
+    freq [s.charAt(i) - 'a'] ++;
   return freq;
 }
 ```

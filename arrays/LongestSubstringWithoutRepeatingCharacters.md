@@ -53,7 +53,7 @@ public int lengthOfLongestSubstring(String str) {
   int[] window = new int[] { 0, 0 };
   Map<Character, Integer> seen = new HashMap<>();
 
-  while (stretchRight(window, str, seen) + 1 < str.length()) {
+  while (stretchWindowRight(window, str, seen) + 1 < str.length()) {
     longest = Math.max(longest, windowLength(window));
     adjustWindowForDuplicate(window, str, seen);
   }
@@ -87,13 +87,15 @@ private int windowLength(int[] window) {
 }
 ```
 
-`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
+`stretchWindowRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
 
 ```java
-private int stretchRight(int[] window, String str, Map<Character, Integer> seen) {
+private int stretchWindowRight(int[] window,
+                              String str,
+                              Map<Character, Integer> seen) {
   int extendedEnd = window[END];
   while (extendedEnd < str.length() &&
-    isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
+         isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
     seen.put(str.charAt(extendedEnd), extendedEnd);
     extendedEnd++;
   }
