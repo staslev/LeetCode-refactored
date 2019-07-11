@@ -108,7 +108,7 @@ public int strStr(String haystack, String needle) {
 }
 ```
 
-Similarly, we can implement the `match(..)` using streams:
+Similarly, we can implement the `matchFrom(..)` using streams:
 
 ```java
 private boolean matchFrom(int start, String needle, String haystack) {
