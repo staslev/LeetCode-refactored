@@ -91,7 +91,9 @@ private boolean canMatch(String needle, String haystack, int from) {
 
 #### Streams to the rescue
 
-This question is a good candidate for using Java streams, which can make the code even clearer. Since streams are lazy, we can construct a lazy stream of matches from each index, and then take the first that succeeded. The laziness of streams allows us to nicely keep the optimization of not processing indices which are known to be far too deep into `haystack`, such that, `i + needle.length() <= haystack.length()` does not hold. Using streams the solution would look like so:
+This question is a good candidate for using Java streams, which can make the code even clearer. Since streams are lazy, we can construct a lazy stream of matches from each index, and then take the first that succeeded. The laziness of Java streams allows us to nicely keep the optimization of not processing indices which are known to be far too deep into `haystack`, such that, `i + needle.length() <= haystack.length()` does not hold.  This is achieved by using `canMatch(..)` before trying to `matchFrom`.
+
+The streams the solution would look like so:
 
 ```java
 public int strStr(String haystack, String needle) {
