@@ -59,12 +59,12 @@ Anyhow, let's refactor the code so that the two steps we devised in the strategy
 
 ```java
 public int firstUniqeChar(String s) {
-  int[] frequencies = buildCharIndex(s);
+  int[] frequencies = buildIndex(s);
   return firstUnique(s, frequencies);
 }
 ```
 
-The `buildCharIndex` method is pretty straight forward, we traverse the string and keep track of how many times we've seen it so far.
+The `buildIndex` method is pretty straight forward, we traverse the string and keep track of how many times we've seen it so far.
 
 ```java
 private int[] buildIndex(String s) {
@@ -97,7 +97,7 @@ public int firstUniqChar(String s) {
 ```
 
 ```java
-public Map<Character, Integer> buildCharIndex(String str) {
+public Map<Character, Integer> buildIndex(String str) {
   Map<Character, Integer> seen = new HashMap<>();
   for(char c : str.toCharArray()) {
     seen.put(c, seen.getOrDefault(c, 0) + 1);

@@ -44,8 +44,8 @@ My goal here is to keep the `isAnagram()` method as clear as possible, abstracti
 
 ```java
 public boolean isAnagram(String s, String t) {
-  int[] sIndex = buildCharCounts(s); // step 1
-  consumeCharCounts(sIndex, t); // step 2
+  int[] sIndex = buildIndex(s); // step 1
+  updateIndex(sIndex, t); // step 2
   return isAllZeros(sIndex); // step 3
 }
 ```
@@ -53,7 +53,7 @@ public boolean isAnagram(String s, String t) {
 then it is a matter of implementing these building blocks:
 
 ```java
-private int[] buildCharCounts(String str) {
+private int[] buildIndex(String str) {
   int[] charIndex = new int[26];
   for(char c : str.toCharArray()) {
     charIndex[keyOf(c)]++;
@@ -61,7 +61,7 @@ private int[] buildCharCounts(String str) {
   return charIndex;
 }
 
-private void consumeCharCounts(int[] index, String str) {
+private void updateIndex(int[] index, String str) {
   for(char c : str.toCharArray()) {
     index[keyOf(c)]--;
   }
