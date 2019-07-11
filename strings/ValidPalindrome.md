@@ -27,7 +27,9 @@ In the question above things are a little tricker as we have some additional res
 
 To meet these requirements we will make the proper adjustments when traversing the input string.
 
+Time complexity here is *O(n)* (where `n` is the length of the string) since we scan the input string once.
 
+Complexity is *O(1)* since we only use fixed space, that is, a fixed number of extra variables.
 
 ### Code
 

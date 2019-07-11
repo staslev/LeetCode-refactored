@@ -20,7 +20,9 @@
 2. Scan other input string and update the char counts of the previously built counts
 3. Check whether the counts are all `0`, i.e., whether all chars in `s` were matched by chars in `t` and vice versa
 
+The time complexity here is *O(n+m)* where `n` and `m` are the input string length.
 
+Space complexity is *O(1)* since we are the questions states that the input strings only contain lowercase alphabets.
 
 ### Code
 

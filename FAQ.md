@@ -27,6 +27,14 @@ That said, short and convoluted solutions may be easier to *memorize*. I do beli
 
 ---
 
+#### Your so called refactored solutions are not as performant as the original ones, why would I want that?
+
+Abstraction and performance have always been a somewhat conflicting aspects. By introducing abstractions usually hurt performance at some level. Oftentimes the performance hit is negligible unless you're working on the Linux kernel, a NASA project, or other mission critical systems. Even when the performance penalty is non negligible, it should be weighted against the (ease of) long term maintenance of the code. 
+
+A penalty of 10 milliseconds once in a blue moon may makes sense in some systems, if the gain is a more maintainable code. A penalty of 30 seconds in a realtime system may not make much sense.
+
+---
+
 #### It's hard to come up with clear and concise solutions on the spot, how did you do that?
 
 I most definitely did not.

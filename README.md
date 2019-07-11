@@ -68,9 +68,7 @@ Mostly because when one reads the revised version of the `moveZeroes` method, th
 
 Looking at the original solution, this is hardly the case. Even though it's clean, the cognitive load is far from trivial given the loops and the conditional expression in one of them.
 
-See also the [FAQ](FAQ.md) section.
-
-
+A nice way to quantify this cognitive load is a metric called [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity). This metric can be computed in IntelliJ by running an inspection fittingly named *"over complex method"*. Running this inspection on the original LeetCode solutions produced complexity warnings time after time. Running it on the solutions present here did not.
 
 ### Dude, do you even know what TLDR  means?
 
