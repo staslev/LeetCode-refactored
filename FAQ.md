@@ -6,9 +6,7 @@
 >
 > --Martin Fowler, "Refactoring: Improving the Design of Existing Code"
 
-The original solutions (code copy-pasted from LeetCode's discussion section) all boil down to a single method performing a certain task.
-
-The alternative solutions presented here retain the original methods' signatures, yet introduce changes to the internal structure of the code. This fits the above definition perfectly, and therefore:
+The original solutions (code copy-pasted from LeetCode's discussion section) all boil down to a single method performing a certain task. The alternative solutions presented here retain the original methods' signatures, yet introduce changes to the internal structure of the code. This fits the above definition perfectly, and therefore:
 
 *LeetCode Refactored*.
 
