@@ -23,3 +23,4 @@
 * [String to Integer](strings/StringToInteger.md)
 * [StrStr](strings/StrStr.md)
 * [Count and Say](strings/CountAndSay.md)
+* [Longest Common Prefix](strings/LongestCommonPrefix.md)
