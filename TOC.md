@@ -29,4 +29,4 @@
 
 * [Remove Nth Node From End of List](linked-lists/RemoveNthNodeFromEnd.md)
 * [Reverse Linked List](linked-lists/ReverseLinkedList.md)
-
+* [Merge Two Sorted Lists](linked-lists/MergeTwoSortedLists.md)
