@@ -7,6 +7,8 @@
 > Editor's note: if the input array is empty `""` should be returned.
 >
 > Solution signature: `String longestCommonPrefix(String[] strs) `
+>
+> [Try it on LeetCode.](https://leetcode.com/problems/longest-common-prefix/)
 
 
 
