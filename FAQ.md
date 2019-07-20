@@ -52,7 +52,7 @@ The first-ish code that comes to mind is often neither clear nor correct, unless
 
 ---
 
-#### Why do you keep saying *corporate whiteboard interview tragedy*?
+#### Why do you keep repeating the phrase *corporate whiteboard interview tragedy*?
 
 I think that the *corporate* and the *whiteboard interview* parts are pretty clear.
 
