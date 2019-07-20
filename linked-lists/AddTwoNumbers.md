@@ -35,6 +35,8 @@ We use a dummy node technique here, to keep a reference to the head node, while 
 
 ### Code
 
+A very up voted solution from LeetCode looks like so:
+
 ```java
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
   ListNode c1 = l1;
