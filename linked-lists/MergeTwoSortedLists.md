@@ -117,7 +117,7 @@ public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
 
 ```java
 public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-  ListNode merged = new ListNode(0);
+  ListNode dummyHeadOfMerged = new ListNode(0);
   ListNode tail = merged;
   
   while (l1 != null && l2 != null) {
@@ -133,7 +133,7 @@ public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
   ListNode remainder = l1 != null ? l1 : l2;
   append(tail, remainder);
 
-  return merged.next; // skip the first dummy node
+  return dummyHeadOfMerged.next; // skip the first dummy node
 }
 ```
 

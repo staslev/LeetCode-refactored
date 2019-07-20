@@ -64,9 +64,7 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 }
 ```
 
-It's very neat and clean, and even commented. It has some tricky parts however, which are still in the dark. For example, from looking at the code it is not very apparent why we need the `start` variable, which is instantiated to a mysterious `0` value.
-
-
+It's very neat and clean, and even commented. It would be great though, if these comments could be used to extract helper methods so that the main code could be simpler and more structured. In the next section we use very similar ideas, but make an extra effort to keep the structure simple by employing helper methods.
 
 ### Refactored
 
