@@ -94,7 +94,7 @@ But perhaps the far more significant issue here, is that while this code general
     // advance pointers
   }
   {
-    // groom result list
+    // groom the result linked list
   }
   ```
 
@@ -155,7 +155,7 @@ while(l1 != null || l2 != null || curry) {
   // track sum
   int sum = getDigit(l1) + getDigit(l2) + (curry ? 1 : 0);
   curry = sum > 9;
-  // groom result list
+  // groom the result linked list
   int currentDigit = sum % 10;
   tail = append(tail, currentDigit);
   // advance pointers
