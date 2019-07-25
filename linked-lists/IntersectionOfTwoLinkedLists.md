@@ -34,6 +34,8 @@ Another, more sophisticated way avoids computing the lengths of the lists altoge
 
 ### Code
 
+Here's a very up-voted solution from LeetCode's discussion section:
+
 ```java
 public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
   int lenA = length(headA), lenB = length(headB);
@@ -64,15 +66,15 @@ private int length(ListNode node) {
 }
 ```
 
-This is very neat and commented, which is a great start. Given its current structure it is very easy to introduce helper methods and thus make this code concise.
+This is very neat and commented, which is a great start. Given its current structure, it is quite easy to introduce helper methods and thus make this code even more clearer and concise.
 
-The first two `while` loops are there to achieve one, and only one goal: advance the pointers until both lists are of the same length. Instead of having two `while` loops to achieve this goal, this is a great opportunity to introduce a helper method. The same argument applies to the third and final `while` loop, its goal is well defined, and is to walk both lists at the same time until they meet / both reach the end (`null`).
+The first two `while` loops are there to achieve one, and only one goal: advance the pointers until both lists are of the same length. These two `while` loops are a great opportunity to introduce a helper method. The same argument applies to the third and final `while` loop, which also has a very well defined goal: to walk both lists at the same time until they meet / both reach the end (`null`).
 
 
 
 ### Refactored
 
-The refactored version is therefore very concise without sacrificing clarity, yet with some abstractions in place:
+The refactored version is therefore as follows:
 
 ```java
 public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
