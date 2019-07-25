@@ -4,7 +4,7 @@
 >
 > For example, the following two linked lists begin to intersect at node `c1`.
 >
-> <img src="https://assets.leetcode.com/uploads/2018/12/13/160_statement.png" width="400">
+> <img src="https://assets.leetcode.com/uploads/2018/12/13/160_statement.png" width="300">
 >
 > **Notes:**
 >
