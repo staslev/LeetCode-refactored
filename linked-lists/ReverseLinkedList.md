@@ -13,6 +13,8 @@
 >
 > A linked list can be reversed either iteratively or recursively. Could you implement both?
 >
+> Solution signature: `ListNode reverseList(ListNode head)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/reverse-linked-list/)
 
 

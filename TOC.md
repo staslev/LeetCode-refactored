@@ -34,3 +34,4 @@
 * [Palindrome Linked List](linked-lists/PalindromeLinkedList.md)
 * [Add Two Numbers](linked-lists/AddTwoNumbers.md)
 * [Odd Even Linked List](linked-lists/OddEvenLinkedList.md)
+* [Intersection of Two Linked Lists](linked-lists/IntersectionOfTwoLinkedLists.md)

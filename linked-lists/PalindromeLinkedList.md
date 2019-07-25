@@ -16,6 +16,8 @@
 > Output: true
 > ```
 >
+> Solution signature: `boolean isPalindrome(ListNode head)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/palindrome-linked-list/)
 
 

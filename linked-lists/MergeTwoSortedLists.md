@@ -9,6 +9,8 @@
 > Output: 1->1->2->3->4->4
 > ```
 >
+> Solution signature: `ListNode mergeTwoLists(ListNode l1, ListNode l2)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 

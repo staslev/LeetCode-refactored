@@ -18,6 +18,8 @@
 >
 > Could you do this in one pass?
 >
+> Solution signature: `ListNode removeNthFromEnd(ListNode head, int n)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 

@@ -11,6 +11,8 @@
 > Output: 7 -> 0 -> 8
 > Explanation: 342 + 465 = 807.
 > ```
+> Solution signature: `ListNode addTwoNumbers(ListNode l1, ListNode l2)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/add-two-numbers/)
 
 

@@ -23,6 +23,8 @@
 > - The relative order inside both the even and odd groups should remain as it was in the input.
 > - The first node is considered odd, the second node even and so on ...
 >
+> Solution signature: `ListNode oddEvenList(ListNode head)`
+>
 > [Try it on LeetCode.](https://leetcode.com/problems/odd-even-linked-list/)
 
 
