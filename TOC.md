@@ -35,3 +35,7 @@
 * [Add Two Numbers](linked-lists/AddTwoNumbers.md)
 * [Odd Even Linked List](linked-lists/OddEvenLinkedList.md)
 * [Intersection of Two Linked Lists](linked-lists/IntersectionOfTwoLinkedLists.md)
+
+## Binary Search Trees
+
+* [Validate Binary Search Tree](binary-search-trees/ValidateBinarySearchTree.md)
