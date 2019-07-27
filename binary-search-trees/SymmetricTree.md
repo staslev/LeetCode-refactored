@@ -146,7 +146,7 @@ private boolean traverseLevels(TreeNode root, Function<List<TreeNode>, Boolean> 
   // root == null will be properly handled
   Queue<TreeNode> workingSet = new LinkedList<>(Arrays.asList(root));
   while (!workingSet.isEmpty()) {
-    List<TreeNode> newlyDiscovered = discoverNewNodes(workingSet);
+    List<TreeNode> newlyDiscovered = discoverNextLevelNodes(workingSet);
     if (!visitor.apply(newlyDiscovered)) {
       return false;
     }
@@ -159,7 +159,7 @@ private boolean traverseLevels(TreeNode root, Function<List<TreeNode>, Boolean> 
 It's important to note even `null` child nodes are added to the list of nodes comprising a given tree level. This is crucial for correctness, since `[v,null]` is NOT a symmetric level, while `[v]` is, so unless we add the `null`s we may get a wrong answer. Since there is no guarantee we'll be dealing with perfectly balanced trees, we must add `null` child nodes.
 
 ```java
-private List<TreeNode> discoverNewNodes(Queue<TreeNode> work) {
+private List<TreeNode> discoverNextLevelNodes(Queue<TreeNode> work) {
   List<TreeNode> level = new ArrayList<>();
   while (!work.isEmpty()) {
     TreeNode node = work.poll();
