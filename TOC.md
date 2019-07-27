@@ -39,3 +39,4 @@
 ## Binary Search Trees
 
 * [Validate Binary Search Tree](binary-search-trees/ValidateBinarySearchTree.md)
+* [Symmetric Tree](binary-search-trees/SymmetricTree.md)

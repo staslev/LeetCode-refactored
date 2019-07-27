@@ -23,8 +23,10 @@ It never ceases to amaze me, how often, and to what extent, common solutions pre
 Personally I happen to believe in software engineering practices, and wish more of them could be taken into account when educating and interviewing software engineers. To that end, my goal with this project it to try and present a different angle on LeetCode questions, one which incorporates some of my beliefs and perspectives, gathered over the past decade and a half of professionally practicing (in the industry) and researching (in academia) software engineering. 
 
 In particular I advocate for:
- - A very *low tolerance for unreadable* code
- - Code that reflects an *intuitive mental model*
+ - *Readable* code
+   * Clear and meaningful naming, concise methods, reasonable control flow, separation of concerns, etc.
+ - Code that reflects one's *[mental model](https://en.wikipedia.org/wiki/Mental_model)* of the solution
+    - The introduction of abstractions to contain complexity and reflect how one sees and thinks of the solution
 
 
 
@@ -69,6 +71,8 @@ Mostly because when one reads the revised version of the `moveZeroes` method, th
 Looking at the original solution, this is hardly the case. Even though it's clean, the cognitive load is far from trivial given the loops and the conditional expression in one of them.
 
 A nice way to quantify this cognitive load is a metric called [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity). This metric can be computed in IntelliJ by running an inspection fittingly named *"over complex method"*. Running this inspection on the original LeetCode solutions produced complexity warnings time after time. Running it on the solutions present here did not.
+
+[Recent studies](https://par.nsf.gov/servlets/purl/10090357) on program comprehension also indicate that source coed lexicon (e.g., identifier naming, name-intent inconsistencies, etc.) have a negative effect on code readability. This implies that storing valuable information in a variable named `i` may not be the best idea when considering code readability.
 
 ### Dude, do you even know what TLDR  means?
 
