@@ -72,7 +72,7 @@ Looking at the original solution, this is hardly the case. Even though it's clea
 
 A nice way to quantify this cognitive load is a metric called [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity). This metric can be computed in IntelliJ by running an inspection fittingly named *"over complex method"*. Running this inspection on the original LeetCode solutions produced complexity warnings time after time. Running it on the solutions present here did not.
 
-[Recent studies](https://par.nsf.gov/servlets/purl/10090357) on program comprehension also indicate that source coed lexicon (e.g., identifier naming, name-intent inconsistencies, etc.) have a negative effect on code readability. This implies that storing valuable information in a variable named `i` may not be the best idea when considering code readability.
+[Recent studies](https://par.nsf.gov/servlets/purl/10090357) on program comprehension also indicate that poor source code lexicon (e.g., identifier naming, name-intent inconsistencies, etc.) have a negative effect on code readability. This implies that storing valuable information in a variable named `i` may not be the best idea when considering code readability.
 
 ### Dude, do you even know what TLDR  means?
 
