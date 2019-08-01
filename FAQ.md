@@ -6,7 +6,7 @@
 >
 > --Martin Fowler, "Refactoring: Improving the Design of Existing Code"
 
-The original solutions (code copy-pasted from LeetCode's discussion section) all boil down to a single method performing a certain task. The alternative solutions presented here retain the original methods' signatures, yet introduce changes to the internal structure of the code. This fits the above definition perfectly, and therefore:
+The original solutions (code copy-pasted up to curlies and whitespaces, from LeetCode's discussion section) all boil down to a single method performing a certain task. The alternative solutions presented here retain the original methods' signatures, yet introduce changes to the internal structure of the code. This fits the above definition perfectly, and therefore:
 
 *LeetCode Refactored*.
 
@@ -17,9 +17,9 @@ The original solutions (code copy-pasted from LeetCode's discussion section) all
 
 IMHO the refactored versions are at least as `2-4x` clearer as they are longer.
 
-A solution being shorter, does not necessarily mean it is easier to produce during an interview or that it is otherwise better (in terms of software properties). I am a huge fan of concise code, but not on account of clarity. In fact, I'd probably argue that it is often the other way around. 
+A solution being shorter, does not necessarily mean it is easier to produce during an interview or that it is otherwise better (in terms of software properties). I am a huge fan of concise code, but not on account of clarity.
 
-Long and clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good at breaking the solution down into building blocks, knowing the major ones is hopefully enough to complete the remaining ones on demand.
+Long and clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good job at breaking the solution down into building blocks, knowing the major ones is should (hopefully) be enough to complete the remaining parts on demand.
 
 That said, short and convoluted solutions may be easier to *memorize*. I do believe that poetry and code have much in common, but while memorizing the former will make you look sophisticated, memorizing the latter will make you look `null`.
 
@@ -27,9 +27,10 @@ That said, short and convoluted solutions may be easier to *memorize*. I do beli
 
 #### Your so called refactored solutions are not as performant as the original ones, why would I want that?
 
-Abstraction and performance have always been somewhat conflicting aspects. By introducing abstractions we usually hurt performance at some level. Oftentimes the performance hit is negligible unless you're working on the Linux kernel, a NASA project, Aviation software, or other mission critical systems. 
+Abstraction and performance have always been somewhat conflicting aspects. By introducing abstractions we usually hurt performance at some level. Oftentimes the performance hit is so negligible it's not even worth thinking about.
+In some cases however, say if you're working on the Linux kernel, a NASA project, Aviation software, or other mission critical systems, it does make a difference and should be carefully considered.
 
-Even when the performance penalty is there, it should be weighted against the long term maintainability of the code. A penalty of 10 milliseconds once in a blue moon may make sense in some systems, if the gain is a more maintainable code. A penalty of 30 seconds in a realtime, mission critical system, may not make much sense because people could die.
+In any case, a performance penalty should be weighted against the long term maintainability of the code. A penalty of 10 milliseconds once in a blue moon may make sense in some systems, if the gain is a more maintainable code. The same penalty in a realtime mission critical system could result in people dying, which can hardly be justified by any degree of code maintability.
 
 ---
 
