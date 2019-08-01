@@ -19,7 +19,7 @@ IMHO the refactored versions are at least as `2-4x` clearer as they are longer.
 
 A solution being shorter, does not necessarily mean it is easier to produce during an interview or that it is otherwise better (in terms of software properties). I am a huge fan of concise code, but not on account of clarity.
 
-Long and clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good job at breaking the solution down into building blocks, knowing the major ones is should (hopefully) be enough to complete the remaining parts on demand.
+Long and clear solutions may very well be easier to reproduce since they reflect an intuitive mental model of the solution. If we did a good job at breaking the solution down into building blocks, knowing the major ones should (hopefully) be enough to complete the remaining parts on demand.
 
 That said, short and convoluted solutions may be easier to *memorize*. I do believe that poetry and code have much in common, but while memorizing the former will make you look sophisticated, memorizing the latter will make you look `null`.
 
