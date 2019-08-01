@@ -56,7 +56,7 @@ The first-ish code that comes to mind is often neither clear nor correct, unless
 
 I think that the *corporate* and the *whiteboard interview* parts are pretty clear.
 
-As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws:
+As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws which tend to make human beings suffer:
 
 1. Unrepresentative Context
    - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to dealing with once (if) they get past the whiteboard interviews and start their *actual job*.
