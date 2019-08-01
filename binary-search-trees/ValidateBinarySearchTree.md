@@ -113,6 +113,14 @@ private boolean treeInRange(TreeNode node, long min, long max) {
 }
 ```
 
+Or, if you really insist it can also be expressed using the following one liner:
+
+```java
+public boolean isValidBST(TreeNode root) {
+  return treeInRange(root, Long.MIN_VALUE, Long.MAX_VALUE);
+}
+```
+
 
 
 ##### Version 2
