@@ -6,7 +6,7 @@ Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-###  [Table Of Contents](TOC.md)
+###  [Table Of Contents](content/TOC.md)
 
 ###  [FAQ](FAQ.md)
 
