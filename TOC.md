@@ -40,4 +40,4 @@
 
 * [Validate Binary Search Tree](binary-search-trees/ValidateBinarySearchTree.md)
 * [Symmetric Tree](binary-search-trees/SymmetricTree.md)
-* [Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)
+* [Binary Tree Level Order Traversal](binary-search-trees/BinaryTreeLevelOrderTraversal.md)
