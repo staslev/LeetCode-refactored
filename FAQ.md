@@ -11,6 +11,20 @@ The original solutions (code copy-pasted up to curlies and whitespaces, from Lee
 *LeetCode Refactored*.
 
 ---
+#### Does the world really need another LeetCode solution set?
+
+Probably not. Who knows what the world really needs these days.
+
+What I have noticed though, is that existing solution sets, and [there're plenty of them on GitHub](https://lmgtfy.com/?q=leetcode+solutions+github), tend to focus purely on the algorithmic nature of the problem. Consequently, I believe many of them leave much to be desired as far as *software engineering* goes, readability (and therefore also maintainability) in particular.
+
+It could actually be funny, if it wasn't  so tragic, because I assume most of the people who wind up on [LeetCode](https://leetcode.com/) probably do so in order to prepare for an interview for a software engineering position, in the scope of which they will be practicing software engineering. Corporate whiteboard interviewers tend to put little emphasis on checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
+
+It never ceases to amaze me, how often, and to what extent, common solutions present code that would fail to pass a typical code review. Now, I'm by no means saying that these solutions aren't clever, or even occasionally genius, what I'm saying is that things like code structure & readability seem to be the first casualties in the *corporate whiteboard interview tragedy*.
+
+Personally I happen to believe in software engineering practices, and wish more of them could be taken into account when educating and interviewing software engineers. 
+
+---
+
 #### Your so called refactored solutions are much longer than the ones on LeetCode. What up with that? Doesn't long equal bad?
 
 *Some* of the refactored solutions are indeed longer. Even if *all* of them were longer I would still use the same argument (below👇). Anyway, if you do `"long".equals("bad")` in Java, the answer is actually `false` so we're good.

@@ -1,6 +1,6 @@
 ## LeetCode Refactored
 
-Refactored solutions for assorted LeetCode questions.
+Common whiteboard coding interview questions solved with software engineering principles in mind.
 
 Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
@@ -8,27 +8,62 @@ Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
 ###  [Table Of Contents](content/README.md)
 
-###  [FAQ](FAQ.md)
+### [FAQ](FAQ.md)
 
-### Does the world really need another LeetCode solution set?
+### Whom can this project be useful for?
 
-Probably not. Who knows what the world really needs these days.
+* People preparing for whiteboard coding interviews
+* People who use whiteboard coding interviews to assess candidates
 
-What I have noticed though, is that existing solution sets, and [there're plenty of them on GitHub](https://lmgtfy.com/?q=leetcode+solutions+github), tend to focus purely on the algorithmic nature of the problem. Consequently, I believe many of them leave much to be desired as far as *software engineering* goes, readability (and therefore also maintainability) in particular.
+#### People preparing for whiteboard coding interviews
 
-It could actually be funny, if it wasn't  so tragic, because I assume most of the people who wind up on [LeetCode](https://leetcode.com/) probably do so in order to prepare for an interview for a software engineering position, in the scope of which they will be practicing software engineering. Corporate whiteboard interviewers tend to put little emphasis on checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
+Existing solution sets, and [there're plenty of them on GitHub](https://lmgtfy.com/?q=leetcode+solutions+github), tend to focus purely on the algorithmic nature of the problem. Getting the algorithm right is definitely crucial, but far from being the only, or arguably even the most important aspect of being a competent software engineer.
 
-It never ceases to amaze me, how often, and to what extent, common solutions present code that would fail to pass a typical code review. Now, I'm by no means saying that these solutions aren't clever, or even occasionally genius, what I'm saying is that things like code structure & readability seem to be the first casualties in the *corporate whiteboard interview tragedy*.
+In this project I present solutions which strongly advocate for a number of qualities I find missing in common coding solutions on the web:
 
-Personally I happen to believe in software engineering practices, and wish more of them could be taken into account when educating and interviewing software engineers. To that end, my goal with this project it to try and present a different angle on LeetCode questions, one which incorporates some of my beliefs and perspectives, gathered over the past decade and a half of professionally practicing (in the industry) and researching (in academia) software engineering. 
+- *Readable* code
+  - Clear and meaningful naming, concise methods, reasonable control flow, separation of concerns, etc.
+- Code that reflects one's *[mental model](https://en.wikipedia.org/wiki/Mental_model)* of the solution
+  - The introduction of abstractions to contain complexity and reflect how one sees and thinks of the solution
 
-In particular I advocate for:
- - *Readable* code
-   * Clear and meaningful naming, concise methods, reasonable control flow, separation of concerns, etc.
- - Code that reflects one's *[mental model](https://en.wikipedia.org/wiki/Mental_model)* of the solution
-    - The introduction of abstractions to contain complexity and reflect how one sees and thinks of the solution
+The end result is clear(er) solutions, which are easier to understand, and therefore reproduce, during technical code interviews. 
 
+Each question discussed, consists of 3 main secions:
 
+1. **Strategy**
+
+   The approach used to solve the question, considerations, caveats, alternatives, etc.
+
+2. **Common solution (code)**
+
+   A top voted solution copy-pasted (modulo styling) from LeetCode. 
+
+   These solutions often present code that is very challenging to read and understand, which leaves much to be desired. These issues are then discussed in the "Refactored" section.
+
+3. **Refactored solution (code)**
+
+   A revised solution that is based on the principles mentioned above - readable code which reflects the mental model of the solution.
+
+#### People who use whiteboard coding interviews to assess candidates
+
+If you're on the interviewing side of the table, you may or may not be aware of the [shortcomings of whiteboard interviews](FAQ.md). I hope this project clearly demonstrates a number of key aspects and qualities you may be overlooking merely by using whiteboard coding interviews to assess candidates' engineering skills.
+
+It feels that the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
+
+I'm afraid I was not able to find any scientific evidence (e.g., studies, papers) supporting the effectiveness of whiteboard coding interviews compared to other methods. If you come across anything of that sort please do share!
+
+### Why did you bother writing all this stuff?
+
+To make the [world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso), obviously. 
+
+Mainly by:
+
+* Increasing the awareness for the benefits of readable code
+  * In a perfect world this would lead to more code being readable
+* Increasing the awareness for the shortcoming of whiteboard coding interviews
+  * In a perfect world this would give rise to better technical interviewing techniques
+
+See the [FAQ](FAQ.md) for more info.
 
 ### That's a lot of words. TLDR please?
 
@@ -72,8 +107,8 @@ Looking at the original solution, this is hardly the case. Even though it's clea
 
 A nice way to quantify this cognitive load is a metric called [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity). This metric can be computed in IntelliJ by running an inspection fittingly named *"over complex method"*. Running this inspection on the original LeetCode solutions produced complexity warnings time after time. Running it on the solutions present here did not.
 
-[Recent studies](https://par.nsf.gov/servlets/purl/10090357) on program comprehension also indicate that poor source code lexicon (e.g., identifier naming, name-intent inconsistencies, etc.) has a negative effect on code readability. This implies that storing valuable information in a variable named `i` may not be the best idea when considering code readability.
+Kind colleagues pointed out [studies](https://par.nsf.gov/servlets/purl/10090357) on program comprehension which indicate that poor source code lexicon (e.g., identifier naming, name-intent inconsistencies, etc.) has a negative effect on code readability. This implies that storing valuable information in a variable named `i` may not be the best idea when considering code readability.
 
-### Dude, do you even know what TLDR  means?
+### Dude, do you even know what TLDR means?
 
 Damn.
