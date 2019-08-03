@@ -49,13 +49,18 @@ public int lengthOfLongestSubstring(String s) {
 
 ```java
 public int lengthOfLongestSubstring(String str) {
-  int longest = 0;
-  int[] window = new int[] { 0, 0 };
+  if (str == null || str.length() == 0) {
+    return 0;
+  }
+
+  int longest = 1;
+  int[] window = new int[] {0, 0};
   Map<Character, Integer> seen = new HashMap<>();
+  seen.put(str.charAt(0), 0);
 
   while (stretchWindowRight(window, str, seen) < str.length() - 1) {
     longest = Math.max(longest, windowLength(window));
-    adjustWindowForDuplicate(window, str, seen);
+    adjustWindowStartForDuplicate(window, str, seen);
   }
 
   return Math.max(longest, windowLength(window));
@@ -65,20 +70,18 @@ public int lengthOfLongestSubstring(String str) {
 I intentionally keep this main method comment free so it's easier to focus solely one the code, and see how it reflects the main steps described in the previously devised strategy:
 
 1. Extend (stretch) `window.end` to the right until the end of the string is reached, or a duplicate violates uniqueness
-2. If a duplicate was encountered, adjust `window.start` and `window.end` in a way that reuses previous work
+2. If a duplicate was encountered, adjust `window.start` in a way that reuses previous work
 3. Repeat (1) + (2)
 
-In order to properly handle cases where the loop is skipped, i.e., in cases where `window.end + 1 >= str.length()` which can be the case when `str.length() == 0` or `str.length() == 1` we perform one last `Math.max(longest, windowLength(window))` before returning the final answer.
+In order to properly handle cases where the window was extended until the string's end, and the `while` loop's condition is not met, we perform one last `Math.max(longest, windowLength(window))` before returning the final answer.
 
-Since we'll be dealing with `window.start` and `window.end` quite a lot, I'd recommend making the access to a window's start and end coordinates extremely easy and clear.
+Since we'll be dealing with `window.start` and `window.end` quite a lot, I like the idea of making the access to a window's start and end coordinates easy.
 
 ```java
 // cosmetics, to allow window[START/END] instead of window[0/1]
 private static final int START = 0;
 private static final int END = 1;
 ```
-
-
 
 ```java
 private int windowLength(int[] window) {
@@ -90,12 +93,10 @@ private int windowLength(int[] window) {
 `stretchWindowRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
 
 ```java
-private int stretchWindowRight(int[] window,
-                              String str,
-                              Map<Character, Integer> seen) {
-  int extendedEnd = window[END];
-  while (extendedEnd < str.length() &&
-         isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
+private int stretchWindowRight(int[] window, String str, Map<Character, Integer> seen) {
+  int extendedEnd = window[END] + 1;
+  while (extendedEnd < str.length()
+         && isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
     seen.put(str.charAt(extendedEnd), extendedEnd);
     extendedEnd++;
   }
@@ -112,20 +113,16 @@ private boolean isUniqueAfterWindowStart(char aChar,
 }
 ```
 
-`adjustWindowForDuplicate` is responsible for making window adjustments once a duplicate is known to be at index `window.end + 1`:
+`adjustWindowStartForDuplicate` is responsible for making adjustments to the window's start once a duplicate is known to be present at index `window.end + 1`:
 
 ```java
-private void adjustWindowForDuplicate(int[] window, 
-                                      String str, 
-                                      Map<Character, Integer> seen) {
-  int windowEndPlusOne = window[END] + 1;
-  char duplicateChar = str.charAt(windowEndPlusOne);
+private void adjustWindowStartForDuplicate(int[] window, 
+                                           String str, 
+                                           Map<Character, Integer> seen) {
+  char duplicateChar = str.charAt(window[END] + 1);
   int duplicateCharIndex = seen.get(duplicateChar);
-
-  window[START] = duplicateCharIndex + 1;
-  window[END] = windowEndPlusOne;
-
   seen.remove(duplicateChar);
+  window[START] = duplicateCharIndex + 1;
 }
 ```
 
