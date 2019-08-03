@@ -53,7 +53,7 @@ public int lengthOfLongestSubstring(String str) {
   int[] window = new int[] { 0, 0 };
   Map<Character, Integer> seen = new HashMap<>();
 
-  while (stretchWindowRight(window, str, seen) + 1 < str.length()) {
+  while (stretchWindowRight(window, str, seen) < str.length() - 1) {
     longest = Math.max(longest, windowLength(window));
     adjustWindowForDuplicate(window, str, seen);
   }
@@ -115,13 +115,17 @@ private boolean isUniqueAfterWindowStart(char aChar,
 `adjustWindowForDuplicate` is responsible for making window adjustments once a duplicate is known to be at index `window.end + 1`:
 
 ```java
-private void adjustWindowForDuplicate(int[] window, String str, Map<Character, Integer> seen) {
+private void adjustWindowForDuplicate(int[] window, 
+                                      String str, 
+                                      Map<Character, Integer> seen) {
   int windowEndPlusOne = window[END] + 1;
   char duplicateChar = str.charAt(windowEndPlusOne);
-  seen.remove(duplicateChar);
+  int duplicateCharIndex = seen.get(duplicateChar);
 
-  window[START] = str.indexOf(duplicateChar, window[START]) + 1;
+  window[START] = duplicateCharIndex + 1;
   window[END] = windowEndPlusOne;
+
+  seen.remove(duplicateChar);
 }
 ```
 
