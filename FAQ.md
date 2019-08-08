@@ -1,5 +1,17 @@
 ## FAQ
 
+#### Why is code readability so important?
+
+Or put another way, "Why should anyone care about code readability?".
+
+There is an enormous amount of material on this subject, ranging from [academic papers](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=code+readability&btnG=) to [posts and essays on the web](https://www.google.com/search?q=why+is+code+readability+important). 
+
+If I had to put it all into one sentence I would probably say that it all boils down to code readability having an immense effect on how easy it is to perform two extremely important software activities: introduce new features, and fix bugs. In fact, one of [Lehman's Laws](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution) states that a system must be continually adapted or it becomes progressively less satisfactory. 
+
+In other words, if you can't adapt your software (e.g., by fixing bugs and introducing new features), your software will become less and less satisfactory. That's actually a big deal, since if your software is "less and less satisfactory", users are likely to start ditching it. Nowadays, users equal money, so the math is pretty clear at this point.
+
+---
+
 #### Why is it called LeetCode refactored?
 
 > "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure." 
