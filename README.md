@@ -14,6 +14,7 @@ Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
 * People preparing for whiteboard coding interviews
 * People who use whiteboard coding interviews to assess candidates
+* Computer science instructors wishing to combine algorithms and software engineering
 
 #### People preparing for whiteboard coding interviews
 
@@ -51,6 +52,14 @@ If you're on the interviewing side of the table, you may or may not be aware of 
 It feels that the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
 
 I'm afraid I was not able to find any scientific evidence (e.g., studies, papers) supporting the effectiveness of whiteboard coding interviews compared to other methods. If you come across anything of that sort please do share!
+
+#### Computer science instructors wishing to combine algorithms and software engineering
+
+IMHO and my personal experience algorithms and software engineering are usually taught in different courses. More often than not, people specialise in either but not both (another factor leading to the *corporate whiteboard interview tragedy*).
+
+In this project I make an attempt at combining the two to produce readable (code) solutions to algorithmic problems. Something's gotta give, rarely can we have a solution that is both optimal (e.g., performance wise) and compliant with software engineering best practices. My goal is to make reasonable tradeoffs in order to produce an end result which is acceptable by both software and algorithm engineers. 
+
+Comments are welcome.
 
 ### Why did you bother writing all this stuff?
 
