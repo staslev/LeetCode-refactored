@@ -93,7 +93,7 @@ Other than merging a bunch of `if` clauses to make this more compact, this is al
 #### Recursive
 
 ```java
-public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
   if (l1 == null || l2 == null) {
     return l1 == null ? l2 : l1;
   }
@@ -109,7 +109,7 @@ public ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
     other = l1;
   }
 
-  source.next = mergeTwoLists3(source.next, other);
+  source.next = mergeTwoLists(source.next, other);
   
   return source;
 }
