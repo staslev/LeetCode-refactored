@@ -218,4 +218,4 @@ private List<int[]> mergeSorted(int[][] intervals) {
 }
 ```
 
-We started with a designed that prioritized clarity and separation of concerns, since the code was modular we could easily introduce changes to the merging process and keep improving the performance characteristics until they were satisfactory.
+We started with a design that prioritized clarity and separation of concerns, since the code was modular we could easily introduce changes to the merging process and keep improving the performance characteristics until they were satisfactory.
