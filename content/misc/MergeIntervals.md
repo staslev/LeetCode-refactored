@@ -212,7 +212,7 @@ private List<int[]> mergeSorted(int[][] intervals) {
   nonOverlapping.add(intervals[0]);
   for (int[] interval : intervals) {
     int[] previous = nonOverlapping.pop();
-    mergeSorted(previous, interval, nonOverlapping, true);
+    mergeSorted(previous, interval, nonOverlapping, true /* or false */);
   }
   return nonOverlapping;
 }
