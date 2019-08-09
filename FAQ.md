@@ -29,11 +29,12 @@ Probably not. Who knows what the world really needs these days.
 
 What I have noticed though, is that existing solution sets, and [there're plenty of them on GitHub](https://lmgtfy.com/?q=leetcode+solutions+github), tend to focus purely on the algorithmic nature of the problem. Consequently, I believe many of them leave much to be desired as far as *software engineering* goes, readability (and therefore also maintainability) in particular.
 
-It could actually be funny, if it wasn't  so tragic, because I assume most of the people who wind up on [LeetCode](https://leetcode.com/) probably do so in order to prepare for an interview for a software engineering position, in the scope of which they will be practicing software engineering. Corporate whiteboard interviewers tend to put little emphasis on checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
+The book ["Elements of Programming Interviews in Java: The Insider's Guide"](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517671272) does a very good job at providing text book quality (well, it is a textbook after all) solutions to pretty much any (whiteboard coding) interview question you can think of. When I started this project I was not aware of this book, so some duplication may occur. Having sampled a number of solutions from this great book, some differences occurred to me:
 
-It never ceases to amaze me, how often, and to what extent, common solutions present code that would fail to pass a typical code review. Now, I'm by no means saying that these solutions aren't clever, or even occasionally genius, what I'm saying is that things like code structure & readability seem to be the first casualties in the *corporate whiteboard interview tragedy*.
+*  In this project I tend to use "extract method" somewhat more aggressively. That is, I use lots of carefully named helper methods as building blocks, putting the emphasis on separation of concerns and readability.
+* The book versions tend to be more solid when it comes to performance optimization, so while in terms of the big O notations the solutions may be on par, the book can sometimes offer tips and tricks to improve performance (e.g., by avoiding an extra occasional traversal).
 
-Personally I happen to believe in software engineering practices, and wish more of them could be taken into account when educating and interviewing software engineers. 
+My goal is obviously not to repeat existing materials, but to provide new insights. If you spot duplication please let me know and we'll figure it out.
 
 ---
 
@@ -81,9 +82,11 @@ The first-ish code that comes to mind is often neither clear nor correct, unless
 
 #### Why do you keep repeating the phrase *corporate whiteboard interview tragedy*?
 
-I think that the *corporate* and the *whiteboard interview* parts are pretty clear.
+It could actually be funny, if it wasn't  so tragic, because I assume most of the people who wind up on [LeetCode](https://leetcode.com/) probably do so in order to prepare for an interview for a software engineering position, in the scope of which they will be practicing software engineering. Corporate whiteboard interviewers tend to put little emphasis on checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
 
-As for the tragedy, well… in my personal view whiteboard interviews have a number of significant flaws which tend to make human beings suffer:
+It never ceases to amaze me, how often, and to what extent, common solutions present code that would fail to pass a typical code review. Now, I'm by no means saying that these solutions aren't clever, or even occasionally genius, what I'm saying is that things like code structure & readability seem to be the first casualties in the *corporate whiteboard interview tragedy*.
+
+IMHO whiteboard coding interviews have a number of significant flaws which tend to make human beings suffer:
 
 1. Unrepresentative Context
    - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to dealing with once (if) they get past the whiteboard interviews and start their *actual job*.
