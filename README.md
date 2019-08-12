@@ -47,7 +47,7 @@ Each question discussed, consists of 3 main secions:
 
 #### People who use whiteboard coding interviews to assess candidates
 
-If you're on the interviewing side of the table, you may or may not be aware of the [shortcomings of whiteboard coding interviews](FAQ.md). I hope this project clearly demonstrates a number of key aspects and qualities you may be overlooking merely by using whiteboard coding interviews to assess candidates' engineering skills. Hopefully, this will help putting these engineering qualities on the check list, as well as raise a discussion about whether whiteboard coding interviews are indeed the best way to assess software engineers.
+If you're on the interviewing side of the table, you may or may not be aware of the [shortcomings of whiteboard coding interviews](FAQ.md#why-do-you-keep-repeating-the-phrase-corporate-whiteboard-interview-tragedy). I hope this project clearly demonstrates a number of key aspects and qualities you may be overlooking merely by using whiteboard coding interviews to assess candidates' engineering skills. Hopefully, this will help putting these engineering qualities on the check list, as well as raise a discussion about whether whiteboard coding interviews are indeed the best way to assess software engineers.
 
 It feels that the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
 
@@ -72,7 +72,7 @@ Mainly by:
 * Increasing the awareness for the shortcoming of whiteboard coding interviews
   * In a perfect world this would give rise to better technical interviewing techniques
 
-See the [FAQ](FAQ.md) for more info.
+See the [FAQ](FAQ.md#does-the-world-really-need-another-leetcode-solution-set) for more info.
 
 ### That's a lot of words. TLDR please?
 
