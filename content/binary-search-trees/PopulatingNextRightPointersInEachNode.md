@@ -156,4 +156,4 @@ public Node connect(Node root) {
 }
 ```
 
-Personally I prefer the very first version where we used a method reference (`  traversePreOrder(root, this::connectSameLevelNodes)`). Call me old fashioned but I believe methods are a great tool to communicate meaning and separate concerns.
+Personally I prefer the very first version where we used a method reference (`traversePreOrder(root, this::connectSameLevelNodes)`). Call me old fashioned but I believe methods are a great tool to communicate meaning and separate concerns.
