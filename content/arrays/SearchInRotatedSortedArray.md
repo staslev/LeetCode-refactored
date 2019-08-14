@@ -69,7 +69,7 @@ int search(int A[], int n, int target) {
 }
 ```
 
-The idea sounds cleve, but far from being straight forward. The code structure does not really help with understanding things, and if it weren't for the comments it'd be very hard to figure it out. Even after having read the comments, performing a binary search while accounting for the rotation is not for the faint hearted.
+The idea sounds clever, but far from being straight forward. The code structure does not really help with understanding things, and if it weren't for the comments it'd be very hard to figure things out. Even after having read the comments, performing a binary search while accounting for the rotation is not for the faint hearted.
 
 We next try to come up with an intuitive, and far less sophisticated solution (which is IMHO, can actually be a good thing).
 
