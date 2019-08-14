@@ -13,6 +13,7 @@
 * [Longest Palindromic Substring](arrays/LongestPalindromicSubstring.md)
 * [Increasing Triplet Subsequence](arrays/IncreasingTripletSubsequence.md)
 * [Product of Array Except Self](arrays/ProductOfArrayExceptSelf.md)
+* [Search in Rotated Sorted Array](arrays/SearchInRotatedSortedArray.md)
 
 ## Strings
 
