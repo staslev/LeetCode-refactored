@@ -22,7 +22,7 @@ Existing solution sets, and [there're plenty of them on GitHub](https://lmgtfy.c
 
 In this project I present solutions which strongly advocate for a number of qualities I find missing in common coding solutions on the web:
 
-- *Readable* code
+- Readable, [clean code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)
   - Clear and meaningful naming, concise methods, reasonable control flow, separation of concerns, etc.
 - Code that reflects one's *[mental model](https://en.wikipedia.org/wiki/Mental_model)* of the solution
   - The introduction of abstractions to contain complexity and reflect how one sees and thinks of the solution
