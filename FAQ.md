@@ -82,11 +82,7 @@ The first-ish code that comes to mind is often neither clear nor correct, unless
 
 #### Why do you keep repeating the phrase *corporate whiteboard interview tragedy*?
 
-It could actually be funny, if it wasn't  so tragic, because I assume most of the people who wind up on [LeetCode](https://leetcode.com/) probably do so in order to prepare for an interview for a software engineering position, in the scope of which they will be practicing software engineering. Corporate whiteboard interviewers tend to put little emphasis on checking for software engineering qualities in favour of whiteboard skills, resulting in a process optimised for the survival of whiteboard engineers.
-
-It never ceases to amaze me, how often, and to what extent, common solutions present code that would fail to pass a typical code review. Now, I'm by no means saying that these solutions aren't clever, or even occasionally genius, what I'm saying is that things like code structure & readability seem to be the first casualties in the *corporate whiteboard interview tragedy*.
-
-IMHO whiteboard coding interviews have a number of significant flaws which tend to make human beings suffer:
+Whiteboard coding interviews have a number of significant flaws which tend to make human beings suffer:
 
 1. Unrepresentative Context
    - It's extremely difficult to come up with algorithms on the spot, so one needs to know them. Many (if not most) of today's software engineers are not well trained algorithm masters simply because their daily tasks revolve around entirely different challenges. The very same challenges that they will go back to dealing with once (if) they get past the whiteboard interviews and start their *actual job*.
@@ -118,6 +114,8 @@ If even the great [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) fell casu
 Somehow the assumption that whiteboard interviews allow software companies to efficiently scale has become an axiom, and the status quo, embraced by many tech companies worldwide. Arguments like "Google uses whiteboard interviews; Google scaled well and is very successful; ergo, whiteboard interviews help software companies scale well and be successful" are just not how causality works.
 
 In light of the considerable issues above, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
+
+If you want the long version, a study titled [Hiring is Broken: What Do Developers Say About Technical Interviews?](https://www.researchgate.net/profile/Mahnaz_Behroozi/publication/334448588_Hiring_is_Broken_What_Do_Developers_Say_About_Technical_Interviews/links/5d2a5d17299bf1547cb49e2e/Hiring-is-Broken-What-Do-Developers-Say-About-Technical-Interviews.pdf) does a very good job at describing the above, as well as the community sentiment on whiteboard interviews. 
 
 ---
 
