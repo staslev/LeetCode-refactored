@@ -1,7 +1,7 @@
 # LeetCode Refactored
 
 ## Arrays
-* [Move Zeros](arrays/MoveZeros.md)
+* [Move Zeroes](arrays/MoveZeroes.md)
 * [Best Time to Buy and Sell Stock II](arrays/BestTimeToBuyAndSellStock2.md)
 * [Contains Duplicate](arrays/ContainsDuplicate.md)
 * [Intersection of Two Arrays II](arrays/IntersectionOfTwoArrays2.md)
