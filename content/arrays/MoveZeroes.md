@@ -71,3 +71,25 @@ private void fillZeroes(int start, int[] nums) {
 }
 ```
 
+
+
+#### Separation of concerns vs. Efficiency
+
+A keen reader may find somewhat of an inefficiency in the above code, as it may end up scanning the input array twice, when potentially once could have sufficed. If we are willing to trade off separation of concerns for efficiency, the following code would do the trick:
+
+```java
+public void moveZeroes(int[] nums) {
+  int writeIndex = 0;
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] != 0) {
+      swap(nums, writeIndex++, i);
+    }
+  }
+}
+
+private void swap(int[] nums, int i, int j) {
+  int temp = nums[i];
+  nums[i] = nums[j];
+  nums[j] = temp;
+}
+```
