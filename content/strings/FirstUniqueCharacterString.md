@@ -41,7 +41,7 @@ public int firstUniqChar(String s) {
 }
 ```
 
-Neat. However, it's not but not entirely clear what parts of the code relate to each step in the strategy we devised.
+Neat. However, even if we assume this code does what the strategy above says, it's not entirely clear what parts of the code relate to each step. Since we have several relaively independant `for` loops, exracting methods can make things clearer.
 
 
 
