@@ -17,7 +17,7 @@ There is a number of ways to approach this question, depending on what time and 
    * Java's `HashSet` implementation [offers constant time](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html) for `add(item)` so this strategy would take linear space and time.
 2. We can sort the input array first. This will place the duplicates next to each other as a result. If the input was `1,2,3,4,3` sorting will result in `1,2,3,3,4` where the duplicate `3` appear consecutively. The time complexity of sorting is *O(nlong)* while the space complexity is *O(n)*. 
 3. We can use `IntStream#distinct()` and let `IntStream` do the heavy lifting and then see if the size of the distinct set is lesser then the original set, this would mean some element have duplicates.
-4. We can use constant space and brute force scan the array and the for the uniqueness of each element.  That is, take the first element (i.e., index `0`) and scan the remaining right hand side of the array for duplicates. If a duplicate is found return `true`, otherwise repeat the same for the next index. The space complexity will be *O(1)* while the time complexity will be *O(n^2)*.
+4. We can use constant space and brute force scan the array for the uniqueness of each element.  That is, take the first element (i.e., index `0`) and scan the remaining right hand side of the array for duplicates. If a duplicate is found return `true`, otherwise repeat the same for the next index. The space complexity will be *O(1)* while the time complexity will be *O(n^2)*.
 
 We can see that the time complexity ranges from *O(n)* to *O(n^2)* and the space complexity ranges from *O(1)* to *O(n)*.
 
