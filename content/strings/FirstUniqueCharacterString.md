@@ -116,4 +116,3 @@ public int firstUnique(String str, Map<Character, Integer> seen) {
   return -1;
 }
 ```
-

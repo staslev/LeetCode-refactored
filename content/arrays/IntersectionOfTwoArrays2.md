@@ -125,3 +125,10 @@ While in *some cases* it may be so (and even then, clarity may be well worth it)
 
 Personally, when I read lines such as `numToCount.put(num, count)` it makes me think that the person who wrote this code had my (i.e., the reader's) wellbeing on their mind, and it makes me feel all warm inside.
 
+
+
+#### Caveats
+
+* Make sure you add the intersected items as many times as they appear in both arrays
+* Make sure you don't add items you have already consumed (i.e., their key in the index is `0`)
+

@@ -113,12 +113,12 @@ validateRows(board) && validateCols(board) && validateSubBoxes(board);
 
 ```java
 private boolean validateRows(char[][] board) {
-  return IntStream.range(0, board.length)
+  return IntStream.range(0, board.length) // a fancy for loop
     .allMatch(row -> isValidBox(board, row, row, 0, board[0].length - 1));
 }
 
 private boolean validateCols(char[][] board) {
-  return IntStream.range(0, board.length)
+  return IntStream.range(0, board.length) // a fancy for loop
     .allMatch(col -> isValidBox(board, 0, board.length - 1, col, col));
 }
 ```
@@ -141,6 +141,25 @@ private int[] toBoxCoordinates(int boxIndex) {
 Once we know how to translate box indices to box 'coordinates' it's just a matter of glueing the pieces together:
 
 ```java
+private boolean validateSubBoxes(char[][] board) {        
+  for(int box = 0; box < board.length; box++) {         
+    int[] boxCoordinates = toBoxCoordinates(box);
+    if(!isValidBox(board,
+                   boxCoordinates[0],
+                   boxCoordinates[1],
+                   boxCoordinates[2],
+                   boxCoordinates[3])) {
+      return false;
+    }
+  }
+  return true;
+}
+
+```
+
+Or if you are really (really) into Java 8 streams:
+
+```java
 private boolean validateSubBoxes(char[][] board) {
   return IntStream.rangeClosed(0, board.length - 1)
     .mapToObj(this::toBoxCoordinates)
@@ -151,3 +170,20 @@ private boolean validateSubBoxes(char[][] board) {
                                         coordinates[3]));
 }
 ```
+
+
+
+#### Caveats
+
+* Make sure you don't add the `.` character to the `seen` char Set (as there can be multiple `.` characters in a valid row)
+
+* If you are afraid you might forget the conversion formulas from box index to box coordinates you can also hardcode it since it's only 9 boxes:
+
+  ```java
+  int[][] boxes = new int[][]{ 
+    // {rowStart, rowEnd, colStart, colEnd}, inclusive
+    {0,2,0,2}, {0,2,3,5}, {0,2,6,8},
+    {3,5,0,2}, {3,5,3,5}, {3,5,6,8}, 
+    {6,8,0,2}, {6,8,3,5}, {6,8,6,8}
+  };
+  ```

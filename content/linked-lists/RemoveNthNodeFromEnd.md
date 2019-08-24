@@ -74,15 +74,12 @@ Let's try to express in code the steps and considerations we discussed as part o
 
 ```java
 public ListNode removeNthFromEnd(ListNode head, int n) {
-  // step 1
-  final ListNode runner = advance(head, n);
-  // step 2
-  if (runner == null) {
+  final ListNode nthPlusOne = advance(head, n);
+
+  if (nthPlusOne == null) {
     return head.next;
-  } else { 
-    // step 3
-    ListNode nthMinusOne = advanceBoth(head, runner);
-    // step 4
+  } else {
+    ListNode nthMinusOne = advanceBoth(head, nthPlusOne);
     nthMinusOne.next = nthMinusOne.next.next;
     return head;
   }
@@ -92,11 +89,11 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 `advance` looks like so:
 
 ```java
-private ListNode advance(ListNode start, int n) {
-  for (int i = 0; i < n; i++) {
-    start = start.next;
+private static ListNode advance(ListNode node, int count) {
+  for (int i = 0; i < count; i++) {
+    node = node.next;
   }
-  return start;
+  return node;
 }
 ```
 
@@ -105,7 +102,7 @@ private ListNode advance(ListNode start, int n) {
 ```java
 private ListNode advanceBoth(ListNode left, ListNode right) {
   // we don't want to let the right runner get passed the last element
-  while (right != null && right.next != null) {
+  while (right.next != null) {
     left = left.next;
     right = right.next;
   }
@@ -132,8 +129,14 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
   }
 
   // step 4
-  return reverse(reversed);
+  return reverse(reversed); // i.e., back to the original list
 }
 ```
 
 Interestingly enough, both solutions are linear in `n`, i.e. *O(n)* where `n` is the length of the linked list. It's just that the more sophisticated one performs two list traversals at most (first runner, second runner), while the less sophisticated solution may perform three list traversals (reverse, delete, reverse).
+
+
+
+#### Caveats
+
+* There is a corner case when `n == size of list`, in which case we should just return `head.next` instead of trying to find the `(n-1)th` node (which hardly exists).

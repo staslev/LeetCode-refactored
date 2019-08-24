@@ -114,3 +114,8 @@ private int countDigitAt(int i, String str) {
 }
 ```
 
+
+
+### Caveats
+
+* Make sure you advance the running index `i` properly inside `countAndSayString`'s main loop, that is, `i = i + count`
