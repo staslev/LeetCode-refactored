@@ -108,17 +108,8 @@ In order to compute a triplet starting with the value at index `i` we need to fi
 private List<List<Integer>> threeSumsForIndex(int i, int[] nums) {
   int num = nums[i];
   List<List<Integer>> twoSums = searchTwoSum(i + 1, nums, -num);
-  return twoSums.stream()
-    .map(twoSum -> make3Sum(num, twoSum))
-    .collect(Collectors.toList());
-}
-```
-
-`make3Sum` is just a convenience method for turning tuples into triplets:
-
-```java
-private List<Integer> make3Sum(int num, List<Integer> twoSum) {
-  return Arrays.asList(num, twoSum.get(0), twoSum.get(1));
+  twoSums.forEach(twoSum -> twoSum.add(num));
+  return twoSums;
 }
 ```
 
@@ -135,7 +126,10 @@ private List<List<Integer>> searchTwoSum(int start, int[] nums, int target) {
     } else if (sum > target) {
       end = skipRepeatsBackward(end, nums);
     } else {
-      twoSums.add(Arrays.asList(nums[start], nums[end]));
+      // new ArrayList<>(Arrays.asList(..)) to make it mutable,
+      // so we can insert the third number easily
+      ArrayList<Integer> twoSum = new ArrayList<>(Arrays.asList(nums[start], nums[end]));
+      twoSums.add(twoSum);
       start = skipRepeatsForward(start, nums);
       end = skipRepeatsBackward(end, nums);
     }
