@@ -116,3 +116,61 @@ public int firstUnique(String str, Map<Character, Integer> seen) {
   return -1;
 }
 ```
+
+
+
+#### Further optimization
+
+While we're at it, a further optimization can be made to avoid scanning the input string twice, worst case. The second scan takes place to determine the first character that has a frequency of 1 (i.e., unique). Similarly to the first optimization where we kept a mapping of letters to their frequency in the input string, we can do the same for first occurrences. We only need to keep the fist index (occurrence) of each distinct letter in the input string.
+
+```java
+public int firstUniqChar(String s) {
+  int[][] info = buildStats(s);
+  int[] frequencies = info[0];
+  int[] firstOccurrences = info[1];
+  return firstUnique(s, frequencies, firstOccurrences);
+}
+```
+
+`buildStats(..)` computes the frequencies and first index for each encountered distinct letter in the input string:
+
+```java
+private int[][] buildStats(String s) {
+  int[] freq = new int[26];
+  int[] firstSeen = new int[26];
+
+  Arrays.fill(firstSeen, -1);
+
+  for (int i = 0; i < s.length(); i++) {
+    int letterKey = letterKey(s.charAt(i));
+    freq[letterKey]++;
+    if (firstSeen[letterKey] == -1) {
+      firstSeen[letterKey] = i;
+    }
+  }
+  return new int[][] {freq, firstSeen};
+}
+
+```
+
+Finding the first unique character now involves looking up letters in both the frequency and occurrences mappings:
+
+```java
+private int firstUnique(String s, int[] frequencies, int[] firstOccurrences) {
+  int firstUnique = Integer.MAX_VALUE;
+  for (char letter = 'a'; letter <= 'z'; letter++) {
+    int letterKey = letterKey(letter);
+    if (frequencies[letterKey] == 1) {
+      firstUnique = Math.min(firstUnique, firstOccurrences[letterKey]);
+    }
+  }
+  return firstUnique != Integer.MAX_VALUE ? firstUnique : -1;
+}
+
+```
+
+```java
+private int letterKey(char letter) {
+  return letter - 'a';
+}
+```
