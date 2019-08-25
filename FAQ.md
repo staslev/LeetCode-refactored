@@ -32,7 +32,7 @@ What I have noticed though, is that existing solution sets, and [there're plenty
 The book ["Elements of Programming Interviews in Java: The Insider's Guide"](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517671272) does a very good job at providing text book quality (well, it is a textbook after all) solutions to pretty much any (whiteboard coding) interview question you can think of. When I started this project I was not aware of this book, so some duplication may occur. Having sampled a number of solutions from this great book, some differences occurred to me:
 
 *  In this project I tend to use "extract method" somewhat more aggressively. That is, I use lots of carefully named helper methods as building blocks, putting the emphasis on separation of concerns and readability.
-* The book versions tend to be more solid when it comes to performance optimization, so while in terms of the big O notations the solutions may be on par, the book can sometimes offer tips and tricks to improve performance (e.g., by avoiding an extra occasional traversal).
+* The book versions tend to be more solid when it comes to performance optimization, so while in terms of the big O notation the solutions may be on par, the book can sometimes offer tips and tricks to make performance tighter (e.g., by avoiding an  occasional extra traversal of the input array).
 
 My goal is obviously not to repeat existing materials, but to provide new insights. If you spot duplication please let me know and we'll figure it out.
 
