@@ -1,6 +1,6 @@
 ## LeetCode Refactored
 
-Common whiteboard coding interview questions solved with software engineering principles in mind.
+**Clean coding** common whiteboard interview questions.
 
 Copyright © 2019 [Stas Levin](https://www.linkedin.com/in/staslevin/).
 
