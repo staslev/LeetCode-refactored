@@ -14,10 +14,11 @@ We can apply a brute force approach, and try each character as the starting poin
 
 This brute force approach can in fact be optimized, so that we only scan the entire array once to obtain the final result. The optimization makes use reuses the work we have done to ensure the uniqueness of the characters until the point a duplicate if found. Attempting to start our next longest non repeating string from the previous starting point + 1 is a waste of all the characters we've already scanned. 
 
-We maintain a logical window, so that `str.substring(window.start, window.end + 1)` is a substring of `str` without repeating characters. We start with both the `window.start` and `window.end` set to `0`, i.e., the beginning of the input string. The brute force approach would try to advance `window.end` by one each time and examine for uniqueness. If the corresponding substring is no longer unique, then we record the current's window length and set `window.start` to `window.start + 1` , and set `window.end` to the new `window.start` so that we can start the whole process again starting from the new `window.start`. 
+We maintain a logical window, so that `str.substring(window.start, window.end)` (i.e., from index `start` until index `end`, excluding `end`) is a substring of `str` without repeating characters. We start with both the `window.start` and `window.end` set to `0`, i.e., the beginning of the input string. The brute force approach would try to advance `window.end` by one each time and examine for uniqueness. If the corresponding substring is no longer unique, then we record the current's window length and set `window.start` to `window.start + 1` , and set `window.end` to the new `window.start` so that we can start the whole process again starting from the new `window.start`. 
 
-The optimization does not set `window.start` to `window.start + 1` when a duplicate is encountered. Instead, it sets `window.start` to `str.indexOf(duplicateChar, window.start) + 1`, that is, the immediate index to the right of the duplicate character within the current window. We have already made sure that `[str.indexOf(duplicateChar, window.start) + 1, window.end` is unique, since `window.end + 1` is the first index to violate the uniqueness of the window `[window.start, window.end]`. Once a duplicate is encountered we set the window to 
-`[str.indexOf(duplicateChar, window.start) + 1, window.end + 1` and resume our attempts to extend `window.end` further to the right. It's important to note that `window.end` only moves forward, thus the linear time complexity of this optimization.
+The optimization does not set `window.start` to `window.start + 1` when a duplicate is encountered. Instead, it sets `window.start` to `str.indexOf(duplicateChar, window.start) + 1`, that is, the immediate index after the duplicate character within the current window. We have already made sure that `[str.indexOf(duplicateChar, window.start) + 1, window.end)` is unique, since `window.end` is guaranteed to be the first index to violate the uniqueness of the previous window `[window.start, window.end)`. 
+
+It's important to note that `window.end` only moves forward, thus the linear time complexity of this optimization.
 
 One final bit we should address is the part where we decide if a given character violates the uniqueness of the current window. To efficiently do this, we maintain a mapping between the characters we've encountered and their indices. When we encounter a duplicate and handle the required window readjustments, we need make sure this mapping is properly updated.
 
@@ -43,27 +44,27 @@ public int lengthOfLongestSubstring(String s) {
 }
 ```
 
+This may not be the easiest way to think about the solution, let alone reproduce it during an interview which can be a rather stressful situation. In the next section our goal is going to be finding the building blocks we need to solve this questions.
+
 
 
 ### Refactored
 
 ```java
-public int lengthOfLongestSubstring(String str) {
-  if (str == null || str.length() == 0) {
+public int lengthOfLongestSubstring(String s) {
+  if (s == null || s.length() == 0) {
     return 0;
   }
 
-  int longest = 1;
-  int[] window = new int[] {0, 0};
+  int[] uniqWindow = new int[] {0, 0};
+  int longest = 0;
   Map<Character, Integer> seen = new HashMap<>();
-  seen.put(str.charAt(0), 0);
 
-  while (stretchWindowRight(window, str, seen) < str.length() - 1) {
-    longest = Math.max(longest, windowLength(window));
-    adjustWindowStartForDuplicate(window, str, seen);
+  while (stretchRight(uniqWindow, s, seen) < s.length()) {
+    longest = Math.max(longest, windowLength(uniqWindow));
+    adjustForDuplicate(uniqWindow, seen, s);
   }
-
-  return Math.max(longest, windowLength(window));
+  return Math.max(longest, windowLength(uniqWindow));
 }
 ```
 
@@ -84,45 +85,40 @@ private static final int END = 1;
 ```
 
 ```java
-private int windowLength(int[] window) {
-  // if a window is [i,j] its substring's length is 2
-  return (window[END] - window[START]) + 1;
+private int windowLength(int[] uniqWindow) {
+  return uniqWindow[END] - uniqWindow[START];
 }
 ```
 
-`stretchWindowRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfterWindowStart` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
+`stretchRight` is responsible for extending the end of the window (to the right) until a duplicate character is encountered, or the end of the string is reached. `isUniqueAfter` checks whether a given character has been observed at, or beyond the current `window.start` (occurrences strictly before `window.start` are irrelevant):
 
 ```java
-private int stretchWindowRight(int[] window, String str, Map<Character, Integer> seen) {
-  int extendedEnd = window[END] + 1;
-  while (extendedEnd < str.length()
-         && isUniqueAfterWindowStart(str.charAt(extendedEnd), window[START], seen)) {
-    seen.put(str.charAt(extendedEnd), extendedEnd);
-    extendedEnd++;
+private int stretchRight(int[] window, String str, Map<Character, Integer> seen) {
+  int i = window[END];
+  while (i < str.length() && isUniqueAfter(window[START], str.charAt(i), seen)) {
+    seen.put(str.charAt(i), i);
+    i++;
   }
-  window[END] = extendedEnd - 1;
-  return window[END];
+  window[END] = i;
+  return i;
 }
 ```
 
 ```java
-private boolean isUniqueAfterWindowStart(char aChar,
-                                         int windowStart,
-                                         Map<Character, Integer> seen) {
-  return !seen.containsKey(aChar) || seen.get(aChar) < windowStart;
+private boolean isUniqueAfter(int index, char aChar, Map<Character, Integer> seen) {
+  return !seen.containsKey(aChar) || seen.get(aChar) < index;
 }
 ```
 
-`adjustWindowStartForDuplicate` is responsible for making adjustments to the window's start once a duplicate is known to be present at index `window.end + 1`:
+`adjustForDuplicate` is responsible for making adjustments to the window's start once a duplicate is known to be present at index `window.end`:
 
 ```java
-private void adjustWindowStartForDuplicate(int[] window, 
-                                           String str, 
-                                           Map<Character, Integer> seen) {
-  char duplicateChar = str.charAt(window[END] + 1);
+private void adjustForDuplicate(int[] window,  
+                                Map<Character, Integer> seen,
+                                String str) {
+  char duplicateChar = str.charAt(window[END]);
   int duplicateCharIndex = seen.get(duplicateChar);
-  seen.remove(duplicateChar);
   window[START] = duplicateCharIndex + 1;
+  seen.remove(duplicateChar);
 }
 ```
-
