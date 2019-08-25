@@ -115,7 +115,7 @@ Somehow the assumption that whiteboard interviews allow software companies to ef
 
 In light of the considerable issues above, I would expect to find scientific evidence supporting the superiority of whiteboard interviews over other interview methods. However, such evidence is nowhere to be found. At least I couldn't find any, if you come across anything of that sort please do share.
 
-If you want the long version, a study titled [Hiring is Broken: What Do Developers Say About Technical Interviews?](https://www.researchgate.net/profile/Mahnaz_Behroozi/publication/334448588_Hiring_is_Broken_What_Do_Developers_Say_About_Technical_Interviews/links/5d2a5d17299bf1547cb49e2e/Hiring-is-Broken-What-Do-Developers-Say-About-Technical-Interviews.pdf) does a very good job at describing the above, as well as the community sentiment on whiteboard interviews. 
+If you want the long version, a study titled [Hiring is Broken: What Do Developers Say About Technical Interviews?](https://www.researchgate.net/profile/Mahnaz_Behroozi/publication/334448588_Hiring_is_Broken_What_Do_Developers_Say_About_Technical_Interviews/links/5d2a5d17299bf1547cb49e2e/Hiring-is-Broken-What-Do-Developers-Say-About-Technical-Interviews.pdf) does a very good job at describing the above. In particular, it studies the (developer) community sentiment on whiteboard interviews on Hacker News (a widely popular social news website), and presents the results of analyzing tens of thousands of forums messages on this subject.
 
 ---
 
