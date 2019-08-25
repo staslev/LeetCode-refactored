@@ -35,7 +35,7 @@ We use a dummy node technique here, to keep a reference to the head node, while 
 
 
 
-### Code
+### (Leet)Code
 
 A very up voted solution from LeetCode looks like so:
 

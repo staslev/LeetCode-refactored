@@ -34,7 +34,7 @@ Once this is figured out, and we realize that the way to go is to traverse the p
 
 
 
-### Code
+### (Leet)Code
 
 A solution on LeetCode looks like so:
 

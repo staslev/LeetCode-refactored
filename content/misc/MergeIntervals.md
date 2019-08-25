@@ -57,7 +57,7 @@ Either way the merged interval would be `[s1, max(e1, e2)]`.
 
 
 
-### Code
+### (Leet)Code
 
 Here's a very up-voted solution from LeetCode:
 

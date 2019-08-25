@@ -30,7 +30,7 @@ You would assume that once we cracked through the strategy the hard part was ove
 
 
 
-### Code
+### (Leet)Code
 
 The most upvoted solution on CodeLeet looks like so:
 

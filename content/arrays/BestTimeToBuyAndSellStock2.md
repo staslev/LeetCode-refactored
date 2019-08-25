@@ -47,7 +47,7 @@ Since we can perform as many transactions as we wish, and we know the price list
 
 
 
-### Code
+### (Leet)Code
 
 This can be expressed in code like so, copied from LeetCode's discussion section:
 

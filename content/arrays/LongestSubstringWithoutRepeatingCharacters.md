@@ -24,7 +24,7 @@ One final bit we should address is the part where we decide if a given character
 
 
 
-### Code
+### (Leet)Code
 
 The most upvoted Java solution on LeetCode looks like so:
 

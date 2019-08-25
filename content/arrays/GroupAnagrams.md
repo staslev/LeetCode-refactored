@@ -14,7 +14,7 @@ If we could come up with function that returned the same key for all anagrams, t
 
 
 
-### Code
+### (Leet)Code
 
 Here's one of the most upvoted solutions on LeetCode:
 

@@ -32,7 +32,7 @@ The die hard solution is actually *O(1)* space, and it requires taking advantage
 
    
 
-### Code
+### (Leet)Code
 
 The most upvoted (Java) solution on LeetCode's discussion section solves the question in *O(1)* space using the approach described above.
 

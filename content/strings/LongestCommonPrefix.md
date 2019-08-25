@@ -19,7 +19,7 @@
 
 
 
-### Code
+### (Leet)Code
 
 One of the most up voted solutions on LeetCode looks like so:
 

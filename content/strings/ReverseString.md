@@ -20,7 +20,9 @@ Time complexity is *O(n)* since we scan the array one.
 
 Space complexity is *O(1)* since we perform the reversing in place (with a few extra helper variables).
 
-### Code
+
+
+### (Leet)Code
 
 Consider the following code (copy-pasted and adjusted from LeetCode's discussion section):
 

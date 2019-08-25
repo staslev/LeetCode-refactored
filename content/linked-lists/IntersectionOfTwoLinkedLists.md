@@ -32,7 +32,9 @@ One of them, with a time complexity of *O(n+m)* and space complexity of *O(1)* c
 
 Another, more sophisticated way avoids computing the lengths of the lists altogether. This solution is presented [here](https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len!) and one of the comments also has a great visual explanation of why this actually works. Time and space complexity however, are the same as before so I will discuss the first solution in the interest of keeping things simple.
 
-### Code
+
+
+### (Leet)Code
 
 Here's a very up-voted solution from LeetCode's discussion section:
 

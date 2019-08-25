@@ -35,7 +35,7 @@ Let's see how this can be expressed in code.
 
 
 
-### Code
+### (Leet)Code
 
 Here's a very up-voted solution from LeetCode:
 

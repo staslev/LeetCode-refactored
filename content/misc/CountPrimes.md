@@ -22,7 +22,9 @@ A brute force approach would be to test each number `k`  in the range (1, n], by
 
 A more efficient way is called the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes), which would be a challenging to invent on the spot is it's better to just familiarize yourself with it beforehand. There are a number of nice illustrations on the web, depicting how it actually works.
 
-### Code
+
+
+### (Leet)Code
 
 The following from LeetCode implements the Sieve of Eratosthenes:
 

@@ -47,7 +47,7 @@ The second step is the tricky part, and it leverages the traversal method we hav
 
 
 
-### Code
+### (Leet)Code
 
 Here's a top-voted solution from LeetCode:
 

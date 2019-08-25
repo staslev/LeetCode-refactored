@@ -28,7 +28,7 @@ We can go about solving this in a number of ways.
 
 
 
-### Code
+### (Leet)Code
 
 The following solution is one of the most upvoted (Java) ones on LeetCode's discussion section:
 

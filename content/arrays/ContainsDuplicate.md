@@ -23,7 +23,7 @@ We can see that the time complexity ranges from *O(n)* to *O(n^2)* and the space
 
 
 
-### Code
+### (Leet)Code
 
 Here's a *O(n)* time and *O(n)* space complexity as copied from LeetCode's discussion section:
 

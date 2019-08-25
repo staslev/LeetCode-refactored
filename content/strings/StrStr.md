@@ -28,7 +28,7 @@ There is also KMP, which is stands for Knuth–Morris–Pratt, which has an *O(n
 
 
 
-### Code
+### (Leet)Code
 
 A very up voted solution on LeetCode looks like so:
 

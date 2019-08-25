@@ -45,7 +45,7 @@ It may be easier to first consider the base cases:
 
 
 
-### Code
+### (Leet)Code
 
 A very up voted solution from LeetCode looks like so:
 

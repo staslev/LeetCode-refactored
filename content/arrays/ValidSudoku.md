@@ -22,7 +22,7 @@ We need to implement the checks mandated by the Sudoku rules. Perhaps the only t
 
 
 
-### Code
+### (Leet)Code
 
 A very upvoted (Java) solution I saw online was as follows:
 

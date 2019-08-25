@@ -22,7 +22,7 @@ If you google this question, wikipedia has a linear solution which we will not c
 
 
 
-### Code
+### (Leet)Code
 
 Here's the code from LeetCode:
 

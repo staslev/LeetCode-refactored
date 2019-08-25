@@ -23,7 +23,7 @@ Once we have this plan in mind, the main challenge that remains is getting the a
 
 
 
-### Code
+### (Leet)Code
 
 Most of the solutions on LeetCode go straight to answering the follow up question and provide a constant space solution. I think it's a nice exercise to first produce a less tight version of the space complexity and then improve upon it.
 

@@ -27,7 +27,7 @@ Essentially, it's the second value that gives us the edge here, since once we fi
 
 
 
-### Code
+### (Leet)Code
 
 As copied from LeetCode's discussion section (Java top voted, I've change some styling but otherwise it's a good old copy paste):
 

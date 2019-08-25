@@ -25,7 +25,7 @@ Space complexity is *O(1)* since the count array is know to be bounded in light 
 
 
 
-### Code
+### (Leet)Code
 
 The most up voted solution on LeetCode looks like so:
 

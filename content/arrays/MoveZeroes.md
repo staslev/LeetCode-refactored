@@ -16,7 +16,7 @@ When we're done scanning the array the range `[0,index)` will contain all the no
 
 
 
-### Code
+### (Leet)Code
 
 Following is a top voted solution from LeetCode:
 

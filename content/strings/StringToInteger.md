@@ -29,7 +29,9 @@ As the instructions say, we need to skip any whitespaces until we get to the fir
 
 The complexity here is *O(n)* (where `n` is the length of the string) since we scan the input string once.
 
-### Code
+
+
+### (Leet)Code
 
 A neat (and very up-voted) solution on LeetCode looks like so
 

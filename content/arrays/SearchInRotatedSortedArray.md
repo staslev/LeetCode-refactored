@@ -40,7 +40,7 @@ Either way we reduce the search space by a factor of 2 each iteration, so the ti
 
 
 
-### Code
+### (Leet)Code
 
 ```c++
 int search(int A[], int n, int target) {
