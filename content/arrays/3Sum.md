@@ -62,7 +62,7 @@ Kinda hard to actually figure out what's going on though. Even after we are fami
 
 
 
-### Refactored
+### (Clean)Code
 
 Following the devised strategy the blue print goes like so:
 

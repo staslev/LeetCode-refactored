@@ -50,7 +50,7 @@ public boolean increasingTriplet(int[] nums) {
 
 
 
-### Refactored
+### (Clean)Code
 
 This is indeed a very short and to the point code. Even so, I feel like it is still hard to figure out. In this particular case I'm not sure there's much to do other than to make an extra effort and have the variable names as clear as possible, and even more importantly, have them tell the story.
 

@@ -121,7 +121,7 @@ This code is intimidating, in a way it's the exact opposite of the previous, rec
 
 
 
-### Refactored
+### (Clean)Code
 
 ##### Iterative solution
 

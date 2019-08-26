@@ -71,7 +71,7 @@ public void setZeroes(int[][] matrix) {
 
 
 
-### Refactored
+### (Clean)Code
 
 It is a non trivial task to correlate the steps we have described with the code presented above. It's difficult to identify what's being handled where.
 

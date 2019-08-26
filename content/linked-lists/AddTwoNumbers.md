@@ -106,7 +106,7 @@ But perhaps the far more significant issue here, is that while this code general
 
   
 
-### Refactored
+### (Clean)Code
 
 I find it easier to have a helper method that simply gets a number from a list, note we can always get a number from a list. If the list is not `null`, the value returned is that of the head node, and the list is `null` the value returned is `0`. This makes things simpler for the main `while` , which can safely consume digits from both lists even if one has ended (in which case `0` will be returned).
 

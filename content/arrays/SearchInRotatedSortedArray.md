@@ -75,7 +75,7 @@ We next try to come up with an intuitive, and far less sophisticated solution (w
 
 
 
-### Refactored
+### (Clean)Code
 
 ```java
 public int search(int[] nums, int target) {

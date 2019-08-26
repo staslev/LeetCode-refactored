@@ -86,7 +86,7 @@ The variable naming in the above code however, could be clearer:
 
 
 
-### Refactored
+### (Clean)Code
 
 In this refactored version we preserve the main structure of the code, but make some changes in order for the code to be more readable and easier to understand. The most significant change we make is making the (overloaded) `letterCombinations(..)` method recursive, instead of iterative. This is done for in order to demonstrate a code template which can be reused for other questions, a template which I believe is easier to understand when expressed recursively.
 

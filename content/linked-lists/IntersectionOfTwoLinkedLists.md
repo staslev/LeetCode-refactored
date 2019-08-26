@@ -74,7 +74,7 @@ The first two `while` loops are there to achieve one, and only one goal: advance
 
 
 
-### Refactored
+### (Clean)Code
 
 The refactored version is therefore as follows:
 

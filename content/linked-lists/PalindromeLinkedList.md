@@ -83,7 +83,7 @@ While it may not be apparent at first glance, this solution pretty much follows 
 
 
 
-### Refactored
+### (Clean)Code
 
 Let's express the strategy we devised earlier in code.
 

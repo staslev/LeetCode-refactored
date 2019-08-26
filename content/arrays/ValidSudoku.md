@@ -60,7 +60,7 @@ If I were to review this code the following pops out (in descending order of imp
 
 
 
-### Refactored
+### (Clean)Code
 
 Let's see if we can make some changes to make things clearer.
 

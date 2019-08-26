@@ -76,7 +76,7 @@ In its current state, these two concerns are interwinded, making it hard both to
 
 
 
-### Refactored
+### (Clean)Code
 
 Let's untangle the two concerns mentioned above so that each can be handled separately. 
 

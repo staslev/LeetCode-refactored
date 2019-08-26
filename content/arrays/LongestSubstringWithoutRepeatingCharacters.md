@@ -48,7 +48,7 @@ This may not be the easiest way to think about the solution, let alone reproduce
 
 
 
-### Refactored
+### (Clean)Code
 
 ```java
 public int lengthOfLongestSubstring(String s) {

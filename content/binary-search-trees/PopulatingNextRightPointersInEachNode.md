@@ -78,7 +78,7 @@ Let's see if we can restructure this code so it's clearer.
 
 
 
-### Refactored
+### (Clean)Code
 
 As discussed in the strategy section, we'd like to use pre-order traversal, which goes hand in hand with visitors that handle the visited nodes. In our case, the visitor will be responsible for connecting the nodes, i.e., populating their `next` reference.
 

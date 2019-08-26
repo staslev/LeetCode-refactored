@@ -35,13 +35,13 @@ Each question discussed, consists of 3 main secions:
 
    The approach used to solve the question, considerations, caveats, alternatives, etc.
 
-2. **Common solution (code)**
+2. **Common solution on LeetCode**
 
    A top voted solution copy-pasted (modulo styling) from LeetCode. 
 
    These solutions often present code that is very challenging to read and understand, which leaves much to be desired. These issues are then discussed in the "Refactored" section.
 
-3. **Refactored solution (code)**
+3. **Refactored solution - clean code**
 
    A revised solution that is based on the principles mentioned above - readable code which reflects the mental model of the solution.
 

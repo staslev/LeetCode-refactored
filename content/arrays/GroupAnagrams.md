@@ -37,7 +37,7 @@ Perhaps somewhat surprisingly, while this is short and to the point we can still
 
 
 
-### Refactored
+### (Clean)Code
 
 All the essential code is already there, we just wish to restructure it so it clearly reflects our strategy which is:
 

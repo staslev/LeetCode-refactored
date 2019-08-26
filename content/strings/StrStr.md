@@ -48,7 +48,7 @@ It is indeed very concise, but it consists of nested loop with multiple conditio
 
 
 
-### Refactored
+### (Clean)Code
 
 First we can restructure a bit so that the string matching is separate from the looping:
 

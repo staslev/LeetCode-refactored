@@ -38,7 +38,7 @@ It's clean indeed, but could use a little structure.
 
 
 
-### Refactored
+### (Clean)Code
 
 ```java
 public void moveZeroes(int[] nums) {  

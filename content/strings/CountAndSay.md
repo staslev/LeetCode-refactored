@@ -70,7 +70,7 @@ We can see that the naming is helpful, though the presence of nested loops and i
 
 
 
-### Refactored
+### (Clean)Code
 
 Essentially, in order to return the `n`-th element in the sequence we need to start from the first one and derive the next element for `n-1` times. It would be nice if this concept could be directly reflected in the code:
 

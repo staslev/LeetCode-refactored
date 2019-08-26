@@ -62,7 +62,7 @@ The wikipedia page [suggests the following steps](https://en.wikipedia.org/wiki/
 
 
 
-### Refactored
+### (Clean)Code
 
 It would be great if we could clearly reflect the steps above in code so it's aligned with the mental model of the solution.
 

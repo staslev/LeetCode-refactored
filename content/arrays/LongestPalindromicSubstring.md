@@ -65,7 +65,7 @@ This code lays the groundwork with the `extendPalindrome` methods, but it has a 
 
 
 
-### Refactored  
+### (Clean)Code  
 
 Going over the input string, for each index `i` the steps we wish to perform are: 
 

@@ -42,7 +42,7 @@ public void reverseString(char[] s) {
 
 
 
-### Refactored
+### (Clean)Code
 
 The code above is quite neat and concise. Perhaps somewhat surprisingly, we can still tidy it up a bit:
 

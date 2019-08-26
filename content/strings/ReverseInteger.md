@@ -62,7 +62,7 @@ It should be noted that in the general case, this may not be sufficient to deter
 
 
 
-### Refactored
+### (Clean)Code
 
 By simply tidying up, extracting some methods, and renaming some variables we get to this:
 

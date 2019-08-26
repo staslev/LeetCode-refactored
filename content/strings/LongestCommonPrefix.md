@@ -58,7 +58,7 @@ It would seem that this solution is neither simple nor optimal. Let's see if thi
 
 
 
-### Refactored
+### (Clean)Code
 
 Since I believe the strategy devised earlier (in the Strategy section) represents a simple mental model of the solution, rather than refactor the original solution, I will express this strategy in code:
 

@@ -29,7 +29,7 @@ Most of the solutions on LeetCode go straight to answering the follow up questio
 
 
 
-### Refactored
+### (Clean)Code
 
 ```java
 public int[] productExceptSelf(int[] nums) {

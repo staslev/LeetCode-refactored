@@ -65,7 +65,8 @@ public int maxProfit(int[] p) {
 ```
 
 
-### Refactored
+
+### (Clean)Code
 
 The solution on LeetCode is quite concise but I believe naming could be better. In addition, personally I get the shivers whenever I see if-clauses inside loops so I tend to look for ways to get rid of those.
 

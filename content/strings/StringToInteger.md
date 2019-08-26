@@ -71,7 +71,9 @@ public int myAtoi(String str) {
 
 The comments in the code are very helpful. In fact they are so helpful we can promote the relevant code blocks to separate methods.
 
-### Refactored
+
+
+### (Clean)Code
 
 ```java
 public int myAtoi(String str) {

@@ -111,7 +111,7 @@ While these may seem like minor issues, addressing them has a significant effect
 
 
 
-### Refactored
+### (Clean)Code
 
 Following the comments above, below is a version that addresses them:
 

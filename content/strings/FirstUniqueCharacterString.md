@@ -45,7 +45,7 @@ Neat. However, even if we assume this code does what the strategy above says, it
 
 
 
-### Refactored
+### (Clean)Code
 
 The original solution uses an array to store the character counts. Since there are 26 letters in the American ABC and the questions states that:
 

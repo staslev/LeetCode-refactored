@@ -70,7 +70,9 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 
 It's very neat and clean, and even commented. It would be great though, if these comments could be used to extract helper methods so that the main code could be simpler and more structured. In the next section we use very similar ideas, but make an extra effort to keep the structure simple by employing helper methods.
 
-### Refactored
+
+
+### (Clean)Code
 
 Let's try to express in code the steps and considerations we discussed as part of the second alternative in the strategy section:
 

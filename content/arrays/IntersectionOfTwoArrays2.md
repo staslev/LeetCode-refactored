@@ -65,7 +65,7 @@ public int[] intersect(int[] nums1, int[] nums2) {
 
 
 
-### Refactored
+### (Clean)Code
 
 A number of changes can be made to make things clearer, while keeping the algorithmic soundness intact:
 

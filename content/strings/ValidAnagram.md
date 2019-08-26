@@ -42,7 +42,9 @@ public boolean isAnagram(String s, String t) {
 
 As it is the case with many solutions on LeetCode, while compact and neat, it's hard to see what's going on even after we are familiar with the solution strategy.
 
-### Refactored
+
+
+### (Clean)Code
 
 My goal here is to keep the `isAnagram()` method as clear as possible, abstracting away according to the strategy:
 

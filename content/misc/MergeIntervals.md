@@ -102,7 +102,7 @@ The merging procedure in this code employs some trickery which consists of two m
 
 
 
-### Refactored
+### (Clean)Code
 
 In the refactored version we discuss the trickery points mentioned above in more detail, and try to make changes which would help the code look clearer (thus alleviating the tricky part).
 
