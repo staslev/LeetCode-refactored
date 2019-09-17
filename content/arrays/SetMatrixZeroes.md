@@ -75,7 +75,7 @@ public void setZeroes(int[][] matrix) {
 
 It is a non trivial task to correlate the steps we have described with the code presented above. It's difficult to identify what's being handled where.
 
-How about now? Is it any easier to figure our what's being handled where?
+How about now? Is it any easier to figure out what's being handled where?
 
 ```java
 public void setZeroes(final int[][] matrix) {
