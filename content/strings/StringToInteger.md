@@ -100,7 +100,7 @@ private int parseNum(int start, String str) {
 }
 ```
 
-The sign character may not may not be present so `parseSign(..)` looks like so:
+The sign character may not be present so `parseSign(..)` looks like so:
 
 ```java
 private Optional<Integer> parseSign(int index, String str) {
